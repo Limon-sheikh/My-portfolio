@@ -6,9 +6,9 @@ const List = () => {
 
   return (
         <div>
-        <ul className="flex gap-6 text-gray-800 uppercase">
+        <ul className="flex gap-6 text-gray-900 capitalize">
             {items.map((item, index) => (
-                <li key={index} className="hover:text-yellow-400 transition-all duration-30 font-[600]">
+                <li key={index} className="hover:text-yellow-400 transition-all duration-30">
                 <a href="#">{item}</a>
                 </li>
             ))}

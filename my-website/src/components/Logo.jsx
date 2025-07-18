@@ -1,9 +1,10 @@
-import React from 'react';
+
+
 
 const Logo = () => {
     return (
-        <div className=' '>
-            
+        <div>
+            <a href="/" className="flex items-center text-xl font-bold text-gray-800">WebRoots</a>
         </div>
     );
 };
