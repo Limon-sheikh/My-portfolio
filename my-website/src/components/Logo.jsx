@@ -3,9 +3,9 @@
 
 const Logo = () => {
     return (
-        <div>
-            <a href="/" className="flex items-center text-xl font-bold text-gray-800">WebRoots</a>
-        </div>
+        <>
+            <a href="/" className="text-3xl flex items-center text-xl font-bold text-gray-700">Limon</a>
+        </>
     );
 };
 
