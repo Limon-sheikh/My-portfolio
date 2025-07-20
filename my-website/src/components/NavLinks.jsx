@@ -6,12 +6,13 @@ const NavLinks = ({ isOpen }) => {
   console.log(open);
 
   return (
-    <ul className={`flex flex-col md:flex-row md:items-center gap-2 md:gap-6 md:bg-transparent md:static absolute top-16 left-0 w-full 
+    <ul className={`flex flex-col md:flex-row md:items-center gap-2 md:gap-6 md:bg-transparent md:static absolute top-20 left-0 w-full 
         md:w-auto p-4 md:p-0 transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'} md:flex `}>
         {List.map((link) => (
             <li key={link.id}>
-            <a href={link.path} className="text-gray-700 hover:text-accent bg-red-500 p-2 inline-block duration-300 border w-full">
-                {link.name}
+            <a href={link.path} 
+              className="text-gray-700 hover:text-accent bg-accent rounded-md p-2 inline-block duration-300 w-full text-center">
+              {link.name}
             </a>
             </li>
         ))}

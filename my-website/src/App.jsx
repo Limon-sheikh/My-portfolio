@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <header className="bg-white shadow fixed top-0 left-0 w-full z-50">
-        <nav className="container mx-auto flex justify-between items-center p-4 relative">
+        <nav className="container mx-auto flex justify-between items-center p-5 relative">
           <Logo />
           <NavLinks isOpen={isOpen} />
           <div className="flex items-center gap-4">
