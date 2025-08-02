@@ -12,7 +12,7 @@ const NavLinks = ({ isOpen }) => {
             <li key={link.id}>
             <a href={link.path} 
               className="text-gray-700 p-4 hover:text-accent bg-accent rounded-md inline-block duration-300 w-full text-center 
-              font-bold text-md md:bg-transparent md:p-2 lg:text-lg">
+              font-semibold text-md md:bg-transparent md:p-2 lg:text-lg">
               {link.name}
             </a>
             </li>

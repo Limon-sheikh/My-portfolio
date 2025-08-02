@@ -39,10 +39,10 @@ const Button = () => {
 
     return (
         <button onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}
-            className={`text-gray-700 md:text-xl lg:text-2xl md:px-4 md:py-2 xl:px-5 xl:py-3 rounded-md capitalize font-bold border-accent
-                transition-all duration-150 ease-linear border hidden md:block `}
+            className={`bg-white text-gray-700 md:text-xl lg:text-2xl md:px-4 md:py-2 xl:px-5 xl:py-3 rounded-md capitalize font-bold border-accent
+            transition-all duration-150 ease-linear border hidden md:block`}
             style={{transform: `translate(${position.x}px, ${position.y}px)`}}>
-                hire me
+            hire me
         </button>
     );
 };
