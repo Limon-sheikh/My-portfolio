@@ -1,25 +1,16 @@
-import heroData from "../data/hero";
-const { socials } = heroData[0];
+import HeroData from "../data/hero";
+
 const Test = () => {
 
-     return (
-      <div className="relative z-10 flex justify-center h-full text-center px-4">
-        {socials.map((social, index) => {
-        const Icon = social.icon;
-        return (
-          <a
-            key={index}
-            href={social.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-black text-2xl"
-            title={social.name}
-          >
-            <Icon /> {/* Render the icon as component */}
-          </a>
-        );
-      })}
-      </div>
+  return (
+    <>
+      <div class="grid grid-cols-3 gap-4">
+  <div class="col-span-2 bg-blue-300">1 (spans 2 columns)</div>
+  <div class="bg-green-300">2</div>
+</div>
+
+
+    </>
   );
 };
 

@@ -13,6 +13,7 @@ export default {
         dark: "#0F172A",        // Deep blackish-blue
         soft: "#E0F2FE",        // Soft light blue
         peach: "#FFEDD5",       // Light peach
+        gray: "#222831",       // Light peach
       },
 
       fontFamily: {

@@ -1,6 +1,4 @@
-import Test from './components/Test'
-
-import {Menu, Github, Facebook, Linkedin, Youtube, Instagram} from 'lucide-react';
+// import Test from './components/Test'
 
 import { useState } from "react";
 import Logo from "./components/Logo";
@@ -14,7 +12,8 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
   
-  const {title, titleName, subtitle} = HeroData[0];
+  const {title, titleName, subtitle, subtitleName, socials} = HeroData[0];
+
 
 
   return (
@@ -25,32 +24,53 @@ function App() {
           <NavLinks isOpen={isOpen} />
           <div className="flex items-center gap-4">
             <MenuToggle isOpen={isOpen} toggle={toggleMenu} />
-            <Button/>
+            <Button title='hire me' border={true}
+              className='text-2xl text-gray md:px-4 md:py-2 xl:px-5 xl:py-3 rounded-md capitalize font-bold border-accent
+              transition-all duration-150 ease-linear border hidden md:block '
+            />
           </div>
         </nav>
       </header>
 
       <main className="bg-red-200">
-        <section className='container mx-auto bg-green-300 flex'>
-          <div className='bg-orange-200 p-5'>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white mt-16">
+        <section className='container mx-auto bg-green-300 grid md:grid-cols-12'>
+          <div className='bg-orange-200 text-gray col-span-7 px-5'>
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mt-16">
               {title} <br/><span className="text-accent">{titleName}</span>
             </h1>
-            <span className='text-xl inline-block pt-8'>{subtitle}</span>
-            <div className='bg-red-300 flex justify-between md:justify-start mt-28 md:gap-8'>
-              <span className='bg-white py-2 md:py-3 px-1 md:px-2 text-gray-800 rounded- rotate-[25deg] shadow-2xl'><Github size={30}/></span>
-              <span className='bg-white py-2 md:py-3 px-1 md:px-2 text-blue-800 rounded- rotate-[25deg] shadow-2xl'><Linkedin size={30}/></span>
-              <span className='bg-white py-2 md:py-3 px-1 md:px-2 text-blue-800 rounded- rotate-[25deg] shadow-2xl'><Facebook size={30}/></span>
-              <span className='bg-white py-2 md:py-3 px-1 md:px-2 text-red-500 rounded- rotate-[25deg] shadow-2xl'><Youtube size={30}/></span>
-              <span className='bg-white py-2 md:py-3 px-1 md:px-2 text-red-500 rounded- rotate-[25deg] shadow-2xl'><Instagram size={30}/></span>
+            <div className='mt-8 bg-red-300 flex flex-wrap'>
+              <span className='pr-2'>{subtitle}</span>
+              <span className="text-xl font-semibold">{subtitleName}</span>
             </div>
+            {/* <p className='pt-6'>{description}</p> */}
+            {/* hero social icons */}
+            <div className='bg-red-300 grid grid-flow-col justify-between md:justify-start mt-12 md:gap-6'>
+              {socials.map((social, index) =>(
+                <a key={index} href={social.link} target='_blank' className='p-2 bg-accent rounded-full '>
+                  <social.icon style={{color: social.color}}/>
+                </a>
+              ))}
+            </div>
+            <div className='my-4 bg-red-300 flex gap-8 md:gap-16'>
+              <Button title='view more' border={true}
+                className='border-accent bg-white text-gray px-4 py-2 font-semibold rounded-md text-md md:text-lg'
+                />
+              <Button title='Downlod Cv' border={true}
+                className='border-accent bg-white text-gray px-4 py-2 font-semibold rounded-md text-md md:text-lg'
+                
+              />
+            </div>
+          </div>
+
+          <div >
+            dfdf
           </div>
         </section>
 
 
 
-      </main>
         {/* <Test></Test> */}
+      </main>
     </>
   );
 }

@@ -1,7 +1,8 @@
 import { useState } from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
-const Button = () => {
+
+const Button = ({title, className, border}) => {
     
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -21,28 +22,27 @@ const Button = () => {
     };
     // end 
 
-    // Props validation and default value ser start
-    // Button.propTypes = {
-        // title: PropTypes.string.isRequired, // title obosshoi string hote hobe
-        // bgColor: PropTypes.string.isRequired, // bgColor obosshoi string hote hobe (Tailwind CSS class)
-        // border: PropTypes.bool,
+    // Props validation and default value start
+    Button.propTypes = {
+        title: PropTypes.string.isRequired,
+        className: PropTypes.string.isRequired,
+        border: PropTypes.bool,
         // icon: PropTypes.node,
-    // };
+    };
 
-    // Button.defaultProps = {
-    //     border: true,
-    //     icon: null, 
-    //   };
+    Button.defaultProps = {
+        border: true,
+        icon: null, 
+      };
     // end   
 
       
 
     return (
         <button onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}
-            className={`bg-white text-gray-700 md:text-xl lg:text-2xl md:px-4 md:py-2 xl:px-5 xl:py-3 rounded-md capitalize font-bold border-accent
-            transition-all duration-150 ease-linear border hidden md:block`}
+            className={`${className} ${border ? 'border' : ''} `}
             style={{transform: `translate(${position.x}px, ${position.y}px)`}}>
-            hire me
+            {title}
         </button>
     );
 };
