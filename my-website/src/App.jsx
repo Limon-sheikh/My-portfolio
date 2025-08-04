@@ -33,9 +33,9 @@ function App() {
       </header>
 
       <main className="bg-red-200">
-        <section className='container mx-auto bg-green-300 grid md:grid-cols-12'>
+        <section className='container mx-auto bg-green-300 grid md:grid-cols-12 h-[100vh]'>
           <div className='bg-orange-200 text-gray col-span-7 px-5'>
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mt-16">
+            <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mt-16">
               {title} <br/><span className="text-accent">{titleName}</span>
             </h1>
             <div className='mt-8 bg-red-300 flex flex-wrap'>

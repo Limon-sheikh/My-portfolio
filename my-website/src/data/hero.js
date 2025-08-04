@@ -6,8 +6,8 @@ import { Facebook, Github, Instagram, Linkedin, Youtube} from 'lucide-react';
 const heroData = [
   {
     id: 1,
-    title: "Hello, I'm",
-    titleName: "Limon sheikh",
+    title: "Hello, ",
+    titleName: "I'm Limon sheikh",
     subtitle: "A Passionate",
     subtitleName: "Front-end Web Developer",
     description: "I design and build user-friendly websites using React.js, Tailwind CSS and modern technologies.",
