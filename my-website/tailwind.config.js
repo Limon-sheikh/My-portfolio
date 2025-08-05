@@ -8,7 +8,8 @@ export default {
       colors: {
         primary: "#1E293B",     // Dark blue
         secondary: "#3B82F6",   // Sky blue
-        accent: "#b8b260",      // Cyan
+        accent: "#b8b260",      // oval green
+        hover: "#a19c4f",      // Cyan
         light: "#F8FAFC",       // Light gray
         dark: "#0F172A",        // Deep blackish-blue
         soft: "#E0F2FE",        // Soft light blue

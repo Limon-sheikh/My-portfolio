@@ -24,31 +24,86 @@ body {
 }
 
 /* styles.css */
-.custom-height {
+.hero-height {
   height: calc(100vh - 96px);
+  min-height: 600px;
+  max-height: 700px;
 }
 
-/* ======== type writing animation ======== */
-/* .typewriter {
+
+
+
+
+
+
+
+
+
+
+
+/* Shutter In Vertical */
+/* .hvr-shutter-in-vertical {
   display: inline-block;
-  overflow: hidden;
-  border-right: 3px solid #ffe604;
-  white-space: nowrap;
-  width: 0;
-  animation: typing 5s steps(24) 1s infinite, blinkCursor 0.4s step-end infinite;
-  cursor: pointer;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #2098D1;
+  transition-property: color;
+  transition-duration: 0.3s;
 }
-
-@keyframes typing {
-  0% {width: 0;}
-
-  50% {width: 100%;} 
-  100% {width: 0;} 
+.hvr-shutter-in-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e1e1e1;
+  transform: scaleY(1);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
-
-@keyframes blinkCursor {
-  50% {
-    border-color: transparent;
-  }
+.hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
+  color: white;
+  color: #a19c4f;
+}
+.hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
+  transform: scaleY(0);
 } */
-/* ======== end ======== */
+
+/* Shutter Out Vertical */
+/* .hvr-shutter-out-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2098D1;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+  color: white;
+}
+.hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+  transform: scaleY(1);
+} */
