@@ -1,7 +1,6 @@
 
 import { Facebook, Github, Instagram, Linkedin, Youtube} from 'lucide-react';
-// import Array from '../assets/array.jpeg'
-// import Lm from '../assets/lm.jpg'
+import Lm from '../assets/lm.jpg'
 
 const heroData = [
   {
@@ -12,7 +11,6 @@ const heroData = [
     subtitleName: "Front-end Web Developer",
     description: "I design and build user-friendly websites using React.js, Tailwind CSS and modern technologies.",
     buttonText: "View My Work",
-    image: "/assets/hero-image.png",
 
     // Social icons
     socials: [
@@ -46,6 +44,14 @@ const heroData = [
         link: "#",
         // color: '#FF0000',
       }
+    ],
+    // image 
+    image: [
+      {
+      id: 1,
+      title: "Hi, I'm",
+      img: Lm,
+      },
     ],
   }, 
 ];
