@@ -33,7 +33,10 @@ function App() {
       </header>
 
       <main className="bg-red-200">
-        <section className='container mx-auto bg-green-300 grid md:grid-cols-12 hero-height p-2 overflow-hidden'>
+        <section className='container mx-auto bg-green-300 grid md:grid-cols-12 p-2 overflow-hidden
+          h-[calc(100vh-96px)] sm:min-h-[550px] sm:max-h-[700px] 
+          md:min-h-[600px] md:max-h-[750px] lg:min-h-[650px] lg:max-h-[800px]
+          '>
           {/* hero left side content start */}
             <div className='bg-orange-200 text-gray col-span-7 px-5'>
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mt-10">
