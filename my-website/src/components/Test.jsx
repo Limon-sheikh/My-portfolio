@@ -1,18 +1,26 @@
+import { useEffect } from "react";
 
 
 const Test = () => {
 
-  return (
-    <>
-      <button className="hvr-shutter-in-vertical ">hire</button>
+  useEffect(() => {
+    const setViewportHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
 
-      <button className="group relative overflow-hidden px-6 py-3 font-semibold text-white bg-black border border-yellow-400">
-      <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
-        dfdfd
-      </span>
-      <span className="absolute inset-0 bg-yellow-400 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-0"></span>
-    </button>
-    </>
+    setViewportHeight();
+    window.addEventListener('resize', setViewportHeight);
+
+    return () => {
+      window.removeEventListener('resize', setViewportHeight);
+    };
+  }, []);
+
+  return (
+    <div className="h-[calc(var(--vh,1vh)*100)] bg-gray-100 flex items-center justify-center">
+      <h1 className="text-3xl font-bold text-center">Dynamic Hero Section</h1>
+    </div>
   );
 };
 
