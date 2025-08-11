@@ -1,6 +1,6 @@
 
 import { Facebook, Github, Instagram, Linkedin, Youtube} from 'lucide-react';
-import heroImage from '../assets/image/mane.webp';
+import heroImage from '../assets/image/hero_img-removebg-preview.png';
 
 
 const heroData = [

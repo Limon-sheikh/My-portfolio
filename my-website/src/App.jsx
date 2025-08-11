@@ -76,9 +76,9 @@ function App() {
 
           {/* hero right side content start */}
             <div className="hidden md:block border-2 border-red-400 col-span-5 ">
-                <img src={image} alt="hero image" 
-                  className="h-28"
-                />
+              <div className='bg-red-300 grid justify-center items-center h-[100%]'>
+                <img src={image} alt="hero image" className='bg-blue-300'/>
+              </div>
             </div>
           {/* hero right side content end */}
         </section>
