@@ -1,15 +1,16 @@
 
 import { Facebook, Github, Instagram, Linkedin, Youtube} from 'lucide-react';
-import heroImage from '../assets/image/hero_img-removebg-preview.png';
+import heroImage from '../assets/image/sass-removebg-preview.png';
 
 
 const heroData = [
   {
     id: 1,
-    title: "Hello, ",
-    titleName: "I'm Limon sheikh",
-    subtitle: "A Passionate",
-    subtitleName: "Front-end Web Developer",
+    hello: "Hello, ",
+    limon: "I'm Limon",
+    sheikh: "sheikh",
+    title: "A Passionate",
+    titleName: "Front-end Web Developer",
     description: "I design and build user-friendly websites using React.js, Tailwind CSS and modern technologies.",
     buttonText: "View My Work",
     image:heroImage,
