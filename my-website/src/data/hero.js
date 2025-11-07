@@ -1,5 +1,5 @@
 
-import { Facebook, Github, Instagram, Linkedin, Youtube} from 'lucide-react';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa6';
 import heroImage from '../assets/image/sass-removebg-preview.png';
 
 
@@ -19,34 +19,42 @@ const heroData = [
     socials: [
       {
         name: "Github",
-        icon: Github,
+        icon: FaGithub,
         link: "https://github.com/Limon-sheikh",
         color: '#24292e',
       },
       {
         name: "Linkedin",
-        icon: Linkedin,
+        icon: FaLinkedin,
         link: "https://www.linkedin.com/in/limonsheikh/",
         color: '#0072B1',
       },
       {
+        name: "twitter",
+        icon: FaTwitter ,
+        link: "#",
+        color: '#1DA1F2',
+      },
+      {
+        name: "instagram",
+        icon: FaInstagram,
+        link: "#",
+        color: '#d62976',
+      },
+      {
         name: "Facebook",
-        icon: Facebook,
+        icon: FaFacebook,
         link: "https://www.facebook.com/limonsheikh23",
         color: '#1877F2',
       },
       {
         name: "youtube",
-        icon: Youtube,
-        link: "#",
+        icon: FaYoutube,
+        link: "https://www.youtube.com/@webroots",
         color: '#FF0000',
-      },
-      {
-        name: "instagram",
-        icon: Instagram,
-        link: "#",
-        // color: '#FF0000',
       }
+      
+      
     ],
   }
 ];

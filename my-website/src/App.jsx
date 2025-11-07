@@ -1,4 +1,4 @@
-import Test from './components/Test'
+// import Test from './components/Test';
 
 import { useState } from "react";
 import Logo from "./components/Logo";
@@ -52,8 +52,18 @@ function App() {
               {/* hero social icons */}
               <div className="grid grid-flow-col justify-between md:justify-start mt-20 md:mt-80 lg:mt-10 md:gap-6">
                 {socials.map((social, index) =>(
-                  <a key={index} href={social.link} target='_blank' className="p-2 bg-accent rounded-full">
-                    <social.icon style={{color: social.color}}/>
+                  <a key={index} href={social.link} style={{borderColor: social.color, transition: "all 0.4s ease-in-out"}} target='_blank' 
+                    className="p-2 border border-black rounded-tl-3xl rounded-tr-3xl rounded-br-3xl"
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.backgroundColor = social.color;
+                        e.currentTarget.firstChild.style.color = "#fff";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.backgroundColor = "transparent";
+                        e.currentTarget.firstChild.style.color = social.color;
+                      }}
+                    >
+                    <social.icon style={{color: social.color, transition: "all 0.4s ease-in-out"}} size={20}/>
                   </a>
                 ))}
               </div>
