@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import Logo from '../Logo';
-import NavLinks from '../NavLinks';
-import Button from '../Button';
+import Logo from './Logo';
+import NavLinks from './NavLinks';
+import Button from './Button';
 import MenuToggle from '../MenuToggle';
 
 const Navber = () => {
@@ -12,7 +12,7 @@ const Navber = () => {
 
 
     return (
-      <header className="bg-white shadow top-0 left-0 w-full relative z-50">
+      <header className="bg-white shadow top-0 left-0 w-full z-50 sticky">
         <nav className="container mx-auto flex justify-between items-center p-4 relative h-24">
           <Logo />
           <NavLinks isOpen={isOpen}

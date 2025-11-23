@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import mainMenu from "../data/mainMenu";
+import mainMenu from "../../data/mainMenu";
 
 const NavLinks = ({ isOpen }) => {
     return (
