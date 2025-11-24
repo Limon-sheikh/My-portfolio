@@ -1,30 +1,34 @@
 import React from "react";
 
-import Progress from "./Progress";
+import Skills from "./Skills";
+import { progressData } from "../../data/about";
+import EducationTimeline from "./Education";
+import ExperienceTimeline from "./Experience";
+
+
 
 const TabContent = ({ activeTab }) => {
   return (
-    <div>
+    <div className="h-[220px] overflow-y-auto overflow-x-hidden wrap-break-word">
+      {/* skills tab */}
       {activeTab === "skills" && (
         <div>
-          <Progress title="Development" percent={65} />
-          <Progress title="Design" percent={95} />
-          <Progress title="Branding" percent={80} />
+          {progressData.map((item) => (
+            <Skills
+              key={item.title}
+              title={item.title}
+              percent={item.percent}
+            />
+          ))}
         </div>
       )}
-
-      {activeTab === "experience" && (
-        <div>
-          <Progress title="Frontend Developer" percent={85} />
-          <Progress title="UI Designer" percent={75} />
-        </div>
+      {/* experience tab */}
+      {activeTab === "experience" &&(
+        <div><ExperienceTimeline /></div>
       )}
-
+      {/* education tab */}
       {activeTab === "education" && (
-        <div>
-          <Progress title="CSE Diploma" percent={90} />
-          <Progress title="Web Development Course" percent={95} />
-        </div>
+        <div><EducationTimeline /></div>
       )}
     </div>
   );
