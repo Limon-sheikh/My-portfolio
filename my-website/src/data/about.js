@@ -24,20 +24,20 @@ export const progressData = [
 // experiance time line data
 export const experianceData = [
   {
-    title: "Developer",
-    duration: "2000-2004 (4 years)",
+    title: "Web Developer",
+    duration: "2024-2025 (1 years)",
     description:
     "Worked on multiple projects involving front-end development, UI design, and responsive layouts. Gained strong experience in HTML, CSS, JavaScript, and React.",
   },
   {
-    title: "Senior Developer",
-    duration: "2004-2008 (4 years)",
+    title: "Wordpress Developer",
+    duration: "2024-2025 (1 years)",
     description:
     "Led a small team of developers, optimized workflows, and contributed to large-scale web applications using React and modern JS frameworks.",
   },
   {
     title: "UI/UX Designer",
-    duration: "2008-2012 (4 years)",
+    duration: "2024-2025 (1 years)",
     description:
     "Focused on creating user-friendly interfaces and improving user experience for various web and mobile applications.",
   },
@@ -49,14 +49,14 @@ export const educationData = [
   {
     degree: "Diploma in Computer Science",
     institute: "Sirajganj Polytechnic Institute",
-    year: "2019 - 2023",
+    year: "2020 - 2024",
     details:
       "Specialized in software development and web technologies. Completed multiple academic and client projects successfully.",
   },
   {
     degree: "Secondary School Certificate (SSC)",
     institute: "Science Group",
-    year: "2017 - 2019",
+    year: "2017 - 2020",
     details:
       "Achieved strong academic performance in science and technology-related subjects.",
   }

@@ -1,42 +1,25 @@
-import React from "react";
-
-const Test = () => {
+function FrontendDevelopmentCard() {
   return (
-    <div>
-      <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-6">Experience</h2>
+    <div className="bg-white p-6 rounded-xl shadow-lg border hover:shadow-xl transition-all duration-300">
+      <h2 className="text-xl font-bold text-accent mb-3">Frontend Development</h2>
 
-        <div class="relative border-l-2 border-blue-600 ml-4">
-          <div class="mb-8 ml-6">
-            <div class="absolute -left-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-              1
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800">Developer</h3>
-            <span class="text-gray-500 text-sm">2000-2004 (4 years)</span>
-            <p class="text-gray-600 mt-2">
-              Worked on multiple projects involving front-end development, UI
-              design, and responsive layouts. Gained strong experience in HTML,
-              CSS, JavaScript, and React.
-            </p>
-          </div>
+      <p className="text-gray-600 mb-4">
+        I specialize in building modern, responsive, and user-friendly web interfaces with clean code and great performance.
+      </p>
 
-          <div class="mb-8 ml-6">
-            <div class="absolute -left-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-              2
-            </div>
-            <h3 class="text-xl font-semibold text-gray-800">
-              Senior Developer
-            </h3>
-            <span class="text-gray-500 text-sm">2004-2008 (4 years)</span>
-            <p class="text-gray-600 mt-2">
-              Led a team of developers to deliver high-quality web applications.
-              Focused on performance optimization and code maintainability.
-            </p>
-          </div>
-        </div>
+      <div className="space-y-2">
+        <p><span className="font-semibold text-gray-800">Specialties:</span> Responsive Design, UI/UX, Performance Optimization</p>
+
+        <p><span className="font-semibold text-gray-800">Technologies:</span> HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript (ES6+), React.js</p>
+
+        <p><span className="font-semibold text-gray-800">Tools:</span> VS Code, Git & GitHub, Figma, Chrome DevTools</p>
+
+        <p><span className="font-semibold text-gray-800">Experience:</span> 1+ Year of Professional & Project Work</p>
+
+        <p><span className="font-semibold text-gray-800">Focus:</span> Creating visually appealing websites with smooth interaction</p>
       </div>
     </div>
   );
-};
+}
 
-export default Test;
+export default FrontendDevelopmentCard;

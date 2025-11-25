@@ -8,12 +8,12 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <section className="pt-20 pb-20 border-2 border-green-400">
-      <div className="container mx-auto rounded-xl overflow-hidden  grid grid-cols-12 gap-4 shadow-md">
-        <div className="left-side col-span-6">
-          <div className=" ">
-          </div>
+    <section className="my-32 bg-white">
+      <div className="container mx-auto rounded-xl overflow-hidden grid grid-cols-12 gap-4 shadow-md bg-white">
+        <div className="left-side col-span-6 border-2">
+          <div className="flex justify-center ">
             <img src={aboutInfo.image} alt="" className="h-[550px]" />
+          </div>
         </div>
         <div className="right-side col-span-6 px-10 pt-14">
           <div>
@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Test /> */}
+      <Test />
     </section>
   );
 };
