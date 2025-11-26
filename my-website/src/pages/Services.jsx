@@ -14,13 +14,17 @@ const Services = () => {
             <p>{serviceTitle.description}</p>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 border-2">
+        <div className="grid md:grid-cols-3 gap-8 border-2 p-6">
           {cardData.map((item) => (
             <Card
-              key={item.id}
+              id={item.id}
+              semiTitle={item.semiTitle}
               title={item.title}
+              tagline={item.tagline}
               description={item.description}
               Icon={item.icon}
+              iconColor={item.iconColor}
+              accent={item.accent}
             />
           ))}
         </div>
