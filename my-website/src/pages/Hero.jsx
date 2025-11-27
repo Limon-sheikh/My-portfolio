@@ -6,7 +6,7 @@ const Home = () => {
   const {hello, limon, sheikh, title, titleName, description, socials, image,} = HeroData[0];
 
   return (
-    <section className=" bg-orange-500 border pb-20 ">
+    <section className=" bg-orange-500 border min-h-[calc(100vh-90px)] ">
       <div className="container mx-auto grid md:grid-cols-12 bg-blue-400 px-5 md:px-0">
         {/* hero left side content start */}
         <div className="text-gray col-span-7">
