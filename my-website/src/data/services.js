@@ -1,6 +1,7 @@
 
 import { FaLaptopCode, FaPalette, FaBolt, FaCheckCircle, FaExternalLinkAlt } from "react-icons/fa"; //testing perpuse
-import { SiTailwindcss, SiReact, SiHtml5, SiCss3, SiJavascript } from "react-icons/si";  //testing perpuse
+import { SiTailwindcss, SiReact, SiHtml5, SiCss3, SiJavascript, SiWordpress, SiPhp } from "react-icons/si";
+import { TbLayout2Filled } from "react-icons/tb";
 
 import { FaCode, FaPaintBrush, FaWordpress  } from "react-icons/fa";
 import { SiSimilarweb } from "react-icons/si";
@@ -18,7 +19,7 @@ export const cardData = [
   {
     id: "frontend",
     title: "Front-End Development",
-    tagline: "Modern, responsive & high-performance websites",
+    tagline: "Modern, responsive websites",
     description:
       "I build clean, accessible and fast front-end apps using modern tools and best practices. I convert designs to pixel-perfect UI and deliver production-ready code.",
     tools: [
@@ -28,54 +29,87 @@ export const cardData = [
       { name: "JavaScript (ES6+)", icon: SiJavascript },
       { name: "React.js", icon: SiReact },
     ],
-    features: [
-      "Responsive & Mobile-first",
-      "Pixel-perfect Figma/PSD to HTML",
-      "SEO-friendly markup",
-      "Cross-browser compatibility",
-      "Clean, commented & maintainable code",
-    ],
-    deliverables: [
-      "Source code (GitHub / Zip)",
-      "Live demo / deployment link",
-      "Setup & usage instructions",
-    ],
-    cta: {
-      label: "View Projects",
-      href: "#projects",
-    },
-    accent: "bg-yellow-200 text-yellow-700",
+    accent: "text-yellow-700 bg-yellow-200",
     icon: FaLaptopCode,
   },
-
-  // Optional: add more service cards below if needed
+  
   {
-    id: "ui/ux",
-    title: "UI / UX Implementation",
-    tagline: "User-centered, accessible and modern interfaces",
+    id: "wordpress",
+    title: "WordPress Development",
+    tagline: "Custom themes & plugins",
     description:
-      "I implement UI designs with careful attention to usability, accessibility and micro-interactions to improve engagement and user satisfaction.",
+      "I create custom WordPress websites with responsive design, SEO-friendly structure, and fast performance. I also develop custom plugins as per client requirements.",
     tools: [
-      { name: "Figma → HTML", icon: FaPalette }, // using FaPalette for visual
-      { name: "Tailwind", icon: SiTailwindcss },
-      { name: "React", icon: SiReact },
+      { name: "WordPress", icon: SiWordpress },
+      { name: "HTML5", icon: SiHtml5 },
+      { name: "CSS3", icon: SiCss3 },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "PHP", icon: SiPhp },
     ],
-    features: [
-      "Accessible components (a11y)",
-      "Micro-interactions & animations",
-      "Design-to-code fidelity",
-    ],
-    deliverables: ["Component library", "Interactive prototypes", "Handoff docs"],
-    cta: { label: "See Case Studies", href: "#case-studies" },
-    accent: "bg-indigo-200 text-indigo-700",
-    icon: FaPalette,
+    link: "/wordpress-projects",
+    accent: "text-pink-700 bg-pink-200",
+    icon: SiWordpress,
   },
+  
+  {
+    id: "theme",
+    title: "Theme Customization",
+    tagline: "Tailored to your brand",
+    description:
+      "I customize WordPress themes to match your brand identity. From layout changes to advanced CSS tweaks, I ensure your site looks unique and professional.",
+    tools: [
+      { name: "WordPress", icon: SiWordpress },
+      { name: "CSS3", icon: SiCss3 },
+      { name: "JavaScript", icon: SiJavascript },
+    ],
+    link: "/theme-customization",
+    accent: "text-violet-700 bg-violet-200",
+    icon: TbLayout2Filled,
+  },
+  
+ 
+  // {
+  //   id: "ui/ux",
+  //   title: "UI / UX Implementation",
+  //   tagline: "User-centered, accessible and modern interfaces",
+  //   description:
+  //     "I implement UI designs with careful attention to usability, accessibility and micro-interactions to improve engagement and user satisfaction.",
+  //   tools: [
+  //     { name: "Figma → HTML", icon: FaPalette }, // using FaPalette for visual
+  //     { name: "Tailwind", icon: SiTailwindcss },
+  //     { name: "React", icon: SiReact },
+  //   ],
+  //   features: [
+  //     "Accessible components (a11y)",
+  //     "Micro-interactions & animations",
+  //     "Design-to-code fidelity",
+  //   ],
+  //   deliverables: ["Component library", "Interactive prototypes", "Handoff docs"],
+  //   cta: { label: "See Case Studies", href: "#case-studies" },
+  //   accent: "bg-indigo-200 text-indigo-700",
+  //   icon: FaPalette,
+  // },
 ];
 
 
 
 
-
+// features: [
+    //   "Responsive & Mobile-first",
+    //   "Pixel-perfect Figma/PSD to HTML",
+    //   "SEO-friendly markup",
+    //   "Cross-browser compatibility",
+    //   "Clean, commented & maintainable code",
+    // ],
+    // deliverables: [
+    //   "Source code (GitHub / Zip)",
+    //   "Live demo / deployment link",
+    //   "Setup & usage instructions",
+    // ],
+    // cta: {
+    //   label: "View Projects",
+    //   href: "#projects",
+    // }, 
 
 
 

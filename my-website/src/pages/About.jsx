@@ -8,9 +8,9 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <section className="my-32 bg-white">
-      <div className="container mx-auto rounded-xl overflow-hidden grid grid-cols-12 gap-4 shadow-md bg-white">
-        <div className="left-side col-span-6 border-2">
+    <section className="py-20 bg-red-300 ">
+      <div className="container mx-auto rounded-xl overflow-hidden grid grid-cols-12 gap-4 shadow-md bg-green-200">
+        <div className="left-side col-span-6">
           <div className="flex justify-center ">
             <img src={aboutInfo.image} alt="" className="h-[550px]" />
           </div>
@@ -30,7 +30,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Test />
     </section>
   );
 };
