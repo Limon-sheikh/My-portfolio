@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <section className=" bg-orange-500 border pb-20 ">
-      <div className="container mx-auto grid md:grid-cols-12 bg-blue-400">
+      <div className="container mx-auto grid md:grid-cols-12 bg-blue-400 px-5 md:px-0">
         {/* hero left side content start */}
         <div className="text-gray col-span-7">
           <h1 className="text-[clamp(3rem,11vw,5rem)] leading-tight md:text-6xl lg:text-7xl font-bold mt-14">
