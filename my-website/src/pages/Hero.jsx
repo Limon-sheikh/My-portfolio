@@ -12,20 +12,20 @@ const Home = () => {
   return (
     <section id="hero" className="h-[calc(100vh-80px)] flex justify-center items-center bg-orange-500 border">
       <div className="container mx-auto h-full bg-pink-400">
-        <div id="wraper" className="grid md:grid-cols-12 h-full">
+        <div id="wraper" className="grid md:grid-cols-12 h-full px-5 md:px-0">
           {/* hero left side content start */}
-          <div className="text-gray col-span-7 bg-yellow-500 flex flex-col justify-between">
-            <div className="bg-yellow-600">
-              <h1 className=" leading-tight md:text-6xl lg:text-7xl font-bold mt-14">
+          <div className="text-gray col-span-7 bg-yellow-500 flex flex-col justify-around md:justify-start">
+            <div className="bg-yellow-600 ">
+              <h1 className="leading-tight text-7xl md:text-6xl lg:text-7xl font-bold md:mt-14">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
                 <span className="text-accent ">{sheikh}</span>
               </h1>
-              <div className="mt-14 flex flex-wrap">
-                <span className="pr-1 text-[15px]">{title}</span>
+              <div className="mt-14 flex flex-wrap text-xl">
+                <span className="pr-1 text-[16px]">{title}</span>
                 <div className="flex items-center">
-                  <span className="text-md sm:text-xl font-bold typewriter">
+                  <span className="text-xl font-bold typewriter">
                     {titleName}
                   </span>
                 </div>
