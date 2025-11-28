@@ -10,13 +10,14 @@ const Home = () => {
 
 
   return (
-    <section id="hero" className="h-[calc(100vh-80px)] flex justify-center items-center bg-orange-500 border">
-      <div className="container mx-auto h-full bg-pink-400">
-        <div id="wraper" className="grid md:grid-cols-12 h-full px-5 md:px-0">
+    <section id="hero" className="min-h-[calc(100dvh-80px)] bg-orange-500 border">
+      {/* <section className="min-h-dvh bg-orange-500"> */}
+      <div className="container mx-auto bg-pink-400">
+        <div id="wraper" className=" md:grid md:grid-cols-12">
           {/* hero left side content start */}
-          <div className="text-gray col-span-7 bg-yellow-500 flex flex-col justify-around md:justify-start">
-            <div className="bg-yellow-600 ">
-              <h1 className="leading-tight text-7xl md:text-6xl lg:text-7xl font-bold md:mt-14">
+          <div className="text-gray px-5 md:px-0  md:col-span-7 bg-yellow-500 flex flex-col justify-around md:justify-start">
+            <div className="bg-yellow-600 py-5">
+              <h1 className="leading-tight text-6xl md:text-7xl font-bold md:mt-14">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
@@ -34,7 +35,7 @@ const Home = () => {
             </div>
 
             {/* hero social icons */}
-            <div className="bg-yellow-700">
+            <div className="bg-yellow-700 py-5 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 ">
                 {socials.map((social, index) => (
                   <a
@@ -86,7 +87,7 @@ const Home = () => {
           </div>
 
           {/* hero right side content start */}
-          <div className="hidden md:block col-span-5 ">
+          <div className="hidden md:block md:col-span-5 ">
             <div className="h-[100%] w-[100%]">
               <img src={image} alt="hero image" className="w-[100%] h-[100%]" />
             </div>

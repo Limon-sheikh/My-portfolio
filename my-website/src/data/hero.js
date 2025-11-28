@@ -10,7 +10,7 @@ const heroData = [
     limon: "I'm Limon",
     sheikh: "sheikh",
     title: "A Passionate",
-    titleName: "Front-end Web Developer",
+    titleName: "Front-end Developer",
     description: "I design and build user-friendly websites using React.js, Tailwind CSS and modern technologies.",
     buttonText: "View My Work",
     image:heroImage,
