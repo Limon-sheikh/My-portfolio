@@ -10,13 +10,13 @@ const Home = () => {
 
 
   return (
-    <section id="hero" className="min-h-[calc(100dvh-80px)] bg-orange-500 border">
+    <section id="hero" className=" bg-orange-500 border flex justify-center">
       {/* <section className="min-h-dvh bg-orange-500"> */}
-      <div className="container mx-auto bg-pink-400">
-        <div id="wraper" className=" md:grid md:grid-cols-12">
+      <div className="container mx-auto bg-pink-400 min-h-[calc(100dvh-80px)] ">
+        <div id="wraper" className=" grid md:grid-cols-12 bg-slate-400 ">
           {/* hero left side content start */}
-          <div className="text-gray px-5 md:px-0  md:col-span-7 bg-yellow-500 flex flex-col justify-around md:justify-start">
-            <div className="bg-yellow-600 py-5">
+          <div className="flex flex-col justify-around min-h-[calc(100dvh-80px)] text-gray px-5  md:col-span-7 bg-yellow-300">
+            <div className="bg-yellow-600 ">
               <h1 className="leading-tight text-6xl md:text-7xl font-bold md:mt-14">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
@@ -35,7 +35,7 @@ const Home = () => {
             </div>
 
             {/* hero social icons */}
-            <div className="bg-yellow-700 py-5 ">
+            <div className="bg-yellow-700 py-5">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 ">
                 {socials.map((social, index) => (
                   <a
@@ -66,9 +66,9 @@ const Home = () => {
                   </a>
                 ))}
               </div>
-
+              
               {/* hero button */}
-              <div className="mt-10 mb-5 flex justify-between md:justify-start md:gap-16">
+              <div className="mt-10 flex justify-between md:justify-start md:gap-16">
                 <Button
                   title="view more"
                   border={false}
