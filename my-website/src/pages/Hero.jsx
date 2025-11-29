@@ -7,36 +7,34 @@ const Home = () => {
   
   
   // h-[calc(100vh-90px)], text-[clamp(3rem,11vw,5rem)]
+  // <section className="min-h-dvh bg-orange-500"> 
 
 
   return (
-    <section id="hero" className="min-h-[calc(100dvh-80px)] overflow-hidden bg-orange-500 flex justify-center">
-      {/* <section className="min-h-dvh bg-orange-500"> */}
-      <div className="container mx-auto bg-pink-400 ">
-        <div id="wraper" className=" grid md:grid-cols-12 bg-slate-400 ">
-          {/* hero left side content start */}
-          <div className="flex flex-col justify-around text-gray px-5  md:col-span-7 bg-yellow-300">
+    <section id="hero" className="min-h-[calc(100vh-80px)] bg-orange-500 border">
+      <div className="container mx-auto min-h-[calc(100vh-80px)] flex flex-col justify-center       bg-pink-400">
+        <div id="wraper" className="px-5 md:px-0  md:grid md:grid-cols-12     bg-green-500 ">
+
+          <div className="flex flex-col md:col-span-6   bg-yellow-300 ">
             <div className="bg-yellow-600 ">
-              <h1 className="leading-tight text-6xl md:text-7xl font-bold md:mt-14">
+              <h1 className="leading-tight text-6xl font-bold md:text-7xl lg:text-8xl pt-5 pb-10 md:pb-0">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
                 <span className="text-accent ">{sheikh}</span>
               </h1>
-              <div className="mt-14 flex flex-wrap text-xl">
-                <span className="pr-1 text-[16px]">{title}</span>
+              <div className="mt-14 flex flex-wrap items-center gap-2 py-2 bg-slate-300">
+                <span className=" text-[16px]">{title}</span>
                 <div className="flex items-center">
-                  <span className="text-xl font-bold typewriter">
-                    {titleName}
-                  </span>
+                  <span className="text-xl font-bold typewriter">{titleName}</span>
                 </div>
               </div>
-              <p className="mt-3">{description}</p>
+              <p className="py-5">{description}</p>
             </div>
 
-            {/* hero social icons */}
-            <div className="bg-yellow-700 py-5">
-              <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 ">
+
+            <div className="py-10 md:py-0 bg-yellow-900 ">
+              <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 bg-violet-600 py-3 md:py-2">
                 {socials.map((social, index) => (
                   <a
                     key={index}
@@ -67,8 +65,8 @@ const Home = () => {
                 ))}
               </div>
               
-              {/* hero button */}
-              <div className="mt-10 flex justify-between md:justify-start md:gap-16">
+
+              <div className="mt-5 md:pb-8 flex justify-between md:justify-start md:gap-16">
                 <Button
                   title="view more"
                   border={false}
@@ -86,12 +84,12 @@ const Home = () => {
             </div>
           </div>
 
-          {/* hero right side content start */}
-          <div className="hidden md:block md:col-span-5 ">
-            <div className="h-[100%] w-[100%]">
+
+          <div className="hidden md:block md:col-span-6   bg-blue-400">d
+            {/* <div className="h-[100%] w-[100%]">
               <img src={image} alt="hero image" className="w-[100%] h-[100%]" />
-            </div>
-            {/* <div className='absolute bg-accent top-60 animate-bounce p-4 rounded-full'>html</div> */}
+            </div> */}
+            
           </div>
         </div>
       </div>
