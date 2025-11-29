@@ -15,7 +15,7 @@ const Home = () => {
       <div className="container mx-auto bg-pink-400 ">
         <div id="wraper" className=" grid md:grid-cols-12 bg-slate-400 ">
           {/* hero left side content start */}
-          <div className="flex flex-col justify-around h-screen text-gray px-5  md:col-span-7 bg-yellow-300">
+          <div className="flex flex-col justify-around h-[calc(100vh-80px)] text-gray px-5  md:col-span-7 bg-yellow-300">
             <div className="bg-yellow-600 ">
               <h1 className="leading-tight text-6xl md:text-7xl font-bold md:mt-14">
                 {hello} <br />
