@@ -23,7 +23,7 @@ const Home = () => {
                 <br />
                 <span className="text-accent ">{sheikh}</span>
               </h1>
-              <div className="mt-14 flex flex-wrap items-center gap-2 py-2 md:bg-slate-300">
+              <div className="mt-10 flex flex-wrap items-center gap-2 py-2 md:bg-slate-300">
                 <span className=" text-[16px]">{title}</span>
                 <div className="flex items-center">
                   <span className="text-xl font-bold typewriter">{titleName}</span>
