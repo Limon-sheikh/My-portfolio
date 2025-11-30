@@ -17,7 +17,7 @@ const Home = () => {
 
           <div className="flex flex-col md:col-span-6   md:bg-yellow-300 ">
             <div className="md:bg-yellow-600 ">
-              <h1 className="leading-tight text-7xl font-bold mt-10 md:text-7xl xl:text-7xl pt-5 pb-10 md:pb-0">
+              <h1 className="leading-tight text-2xl sm:text-3xl font-bold mt-10 md:text-7xl xl:text-7xl pt-5 pb-10 md:pb-0">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
