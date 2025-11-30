@@ -17,7 +17,7 @@ const Home = () => {
 
           <div className="flex flex-col md:col-span-6     sm:bg-yellow-300 ">
             <div className="pt-12 sm:pt-14 md:pt-16       sm:bg-yellow-600 ">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight ">
+              <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
 
 
-            <div className="mt-28 sm:bg-yellow-900 ">
+            <div className="mt-24 sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a
