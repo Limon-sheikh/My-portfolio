@@ -17,19 +17,22 @@ const Home = () => {
 
           <div className="flex flex-col md:col-span-6   md:bg-yellow-300 ">
             <div className="md:bg-yellow-600 ">
-              <h1 className="leading-tight text-2xl sm:text-3xl font-bold mt-10 md:text-7xl xl:text-7xl pt-5 pb-10 md:pb-0">
+              <h1 className="leading-tight text-[clamp(4rem, 6vh, 8rem)] font-bold mt-10  pt-5 pb-10 md:pb-0">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
                 <span className="text-accent ">{sheikh}</span>
               </h1>
-              <div className="mt-10 flex flex-wrap items-center gap-2 py-2 md:bg-slate-300">
-                <span className=" text-[16px]">{title}</span>
-                <div className="flex items-center">
-                  <span className="text-xl font-bold typewriter">{titleName}</span>
+              {/* typewriter */}
+              <div className="mt-10 flex items-center flex-wrap gap-1 py-1 bg-slate-300">
+                <span className="text-base">{title}</span>
+                <div className="w-52 sm:w-56 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap bg-violet-500">
+                  <div className="inline-block">
+                    <span className="text-lg sm:text-xl md:text-2xl flex items-center font-bold typewriter">{titleName}</span>
+                  </div>
                 </div>
               </div>
-              <p className="py-5">{description}</p>
+              <p className="py-5 text-justify text-base">{description}</p>
             </div>
 
 
