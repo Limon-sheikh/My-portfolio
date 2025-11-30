@@ -11,7 +11,9 @@ const heroData = [
     sheikh: "sheikh",
     title: "A Passionate",
     titleName: "Front-end Developer ",
-    description: "I design and build user-friendly websites using React.js, Tailwind CSS and modern technologies.",
+    // description: "I’m a MERN Stack Developer specializing in building fast, responsive, and scalable web applications using MongoDB, Express.js, React.js & Node.js ",
+    description: "I’m a Front-End Developer delivering modern, responsive, and performance-focused web interfaces using HTML, CSS, Tailwind, JavaScript, and React to ensure seamless user experiences across all platforms.",
+    // description: "I design and build user-friendly websites using React.js, Tailwind CSS and modern technologies.",
     buttonText: "View My Work",
     image:heroImage,
 
