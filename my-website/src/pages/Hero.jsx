@@ -12,12 +12,12 @@ const Home = () => {
 
   return (
     <section id="hero" className="min-h-[calc(100vh-90px)] md:bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)] flex flex-col justify-center  md:block     md:bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0  md:grid md:grid-cols-12  md:bg-green-500 ">
+      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center       md:bg-pink-400">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     md:bg-green-500 ">
 
           <div className="flex flex-col md:col-span-6   md:bg-yellow-300 ">
             <div className="md:bg-yellow-600 ">
-              <h1 className="leading-tight text-7xl font-bold md:mt-10 md:text-7xl xl:text-7xl pt-5 pb-10 md:pb-0">
+              <h1 className="leading-tight text-7xl font-bold mt-10 md:text-7xl xl:text-7xl pt-5 pb-10 md:pb-0">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
