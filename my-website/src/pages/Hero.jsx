@@ -16,7 +16,7 @@ const Home = () => {
         <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     sm:bg-green-500 ">
 
           <div className="flex flex-col md:col-span-6     sm:bg-yellow-300 ">
-            <div className="pt-10 sm:pt-12 md:pt-14       sm:bg-yellow-600 ">
+            <div className="pt-12 sm:pt-14 md:pt-16       sm:bg-yellow-600 ">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
@@ -24,7 +24,7 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="flex items-center flex-wrap gap-1 sm:gap-2 py-1 mt-10      sm:bg-red-300">
+              <div className="flex items-center flex-wrap gap-1 sm:gap-2 py-1 mt-14      sm:bg-red-300">
                 <span className="text-[14px] sm:text-base">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
 
 
-            <div className="mt-20 sm:bg-yellow-900 ">
+            <div className="mt-28 sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a
