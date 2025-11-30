@@ -11,9 +11,9 @@ const Home = () => {
 
 
   return (
-    <section id="hero" className="min-h-[calc(100vh-90px)] md:bg-orange-500">
+    <section id="hero" className="min-h-[calc(100vh-80px)] md:bg-orange-500">
       <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center       md:bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     md:bg-green-500 ">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     bg-green-500 ">
 
           <div className="flex flex-col md:col-span-6   md:bg-yellow-300 ">
             <div className="md:bg-yellow-600 ">
