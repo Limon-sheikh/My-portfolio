@@ -24,11 +24,11 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="mt-10 flex items-center flex-wrap gap-1 py-1 bg-slate-300">
-                <span className="text-base">{title}</span>
-                <div className="w-52 sm:w-56 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap bg-violet-500">
+              <div className="mt-10 flex items-center flex-wrap gap-1 sm:gap-2 py-1 bg-slate-300">
+                <span className="text-[14px] sm:text-base">{title}</span>
+                <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap bg-violet-600 ">
                   <div className="inline-block">
-                    <span className="text-lg sm:text-xl md:text-2xl flex items-center font-bold typewriter">{titleName}</span>
+                    <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">{titleName}</span>
                   </div>
                 </div>
               </div>
