@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        cambodia: ['"Battambang"', 'sans-serif'],
       },
 
     },

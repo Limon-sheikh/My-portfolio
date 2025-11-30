@@ -11,33 +11,33 @@ const Home = () => {
 
 
   return (
-    <section id="hero" className="min-h-[calc(100vh-80px)] md:bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center       md:bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     bg-green-500 ">
+    <section id="hero" className="min-h-[calc(100vh-80px)] sm:bg-orange-500">
+      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center       sm:bg-pink-400">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     sm:bg-green-500 ">
 
-          <div className="flex flex-col md:col-span-6   md:bg-yellow-300 ">
-            <div className="md:bg-yellow-600 ">
-              <h1 className="leading-tight text-[clamp(4rem, 6vh, 8rem)] font-bold mt-10  pt-5 pb-10 md:pb-0">
+          <div className="flex flex-col md:col-span-6     sm:bg-yellow-300 ">
+            <div className="pt-10 sm:pt-12 md:pt-14       sm:bg-yellow-600 ">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="mt-10 flex items-center flex-wrap gap-1 sm:gap-2 py-1 bg-slate-300">
+              <div className="flex items-center flex-wrap gap-1 sm:gap-2 py-1 mt-10      sm:bg-red-300">
                 <span className="text-[14px] sm:text-base">{title}</span>
-                <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap bg-violet-600 ">
+                <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
                     <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">{titleName}</span>
                   </div>
                 </div>
               </div>
-              <p className="py-5 text-justify text-base">{description}</p>
+              <p className="pt-5 text-justify text-base">{description}</p>
             </div>
 
 
-            <div className="py-10 md:py-0 md:bg-yellow-900 md:mt-5">
-              <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 md:bg-violet-600 py-3 md:py-2">
+            <div className="mt-20 sm:bg-yellow-900 ">
+              <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a
                     key={index}
@@ -69,7 +69,7 @@ const Home = () => {
               </div>
               
 
-              <div className="mt-5 md:pb-8 flex justify-between md:justify-start md:gap-16">
+              <div className="flex justify-between md:justify-start md:gap-16 pt-5 pb-10   sm:bg-orange-800">
                 <Button
                   title="view more"
                   border={false}
