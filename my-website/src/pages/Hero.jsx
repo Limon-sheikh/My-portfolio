@@ -15,8 +15,8 @@ const Home = () => {
       <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center       sm:bg-pink-400">
         <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     sm:bg-green-500 ">
 
-          <div className="flex flex-col md:col-span-6     sm:bg-yellow-300 ">
-            <div className="pt-16 sm:pt-16 md:pt-20 lg:pt-12       sm:bg-yellow-600 ">
+          <div className="pt-10 xxs:pt-12 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
+            <div className="sm:bg-yellow-600 ">
               <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
@@ -24,7 +24,7 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="flex items-center flex-wrap gap-1 sm:gap-2 py-1 mt-14      sm:bg-red-300">
+              <div className="mt-10 xxs:pt-12 flex items-center flex-wrap gap-1 py-1      sm:bg-red-300">
                 <span className="text-[14px] sm:text-base">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
@@ -32,11 +32,10 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <p className="pt-5 text-justify text-base">{description}</p>
+              <p className="pt-3 text-justify text-base">{description}</p>
             </div>
 
-
-            <div className="mt-24 sm:bg-yellow-900 ">
+            <div className="mt-16 sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a
@@ -67,7 +66,6 @@ const Home = () => {
                   </a>
                 ))}
               </div>
-              
 
               <div className="flex justify-between md:justify-start md:gap-16 pt-5 pb-10   sm:bg-orange-800">
                 <Button
@@ -87,11 +85,10 @@ const Home = () => {
             </div>
           </div>
 
-
-          <div className="hidden md:block md:col-span-6   bg-blue-400">d
-            {/* <div className="h-[100%] w-[100%]">
+          <div className="hidden md:block md:col-span-6   bg-blue-400">
+            <div className="h-[100%] w-[100%]">
               <img src={image} alt="hero image" className="w-[100%] h-[100%]" />
-            </div> */}
+            </div>
             
           </div>
         </div>
