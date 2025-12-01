@@ -1,127 +1,85 @@
-// src/components/Services.jsx
 import React from "react";
-import { FaLaptopCode, FaPalette, FaBolt, FaCheckCircle, FaExternalLinkAlt } from "react-icons/fa";
-import { SiTailwindcss, SiReact, SiHtml5, SiCss3, SiJavascript } from "react-icons/si";
+import HeroData from "../data/hero";
+import Button from "../components/Navber/Button";
+import "../App.css"; // custom typewriter CSS
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
+const Home = () => {
+  const { hello, limon, sheikh, title, titleName, description, socials, image } = HeroData[0];
 
-import {cardData} from "../data/services"
-
-
-function ToolBadge({ Tool, name }) {
   return (
-    <span className="inline-flex items-center gap-2 px-2 py-1 rounded-md text-xs font-medium bg-gray-100/60 dark:bg-white/5">
-      {Tool &&<Tool className="w-4 h-4" aria-hidden />}
-      <span>{name}</span>
-    </span>
-  );
-}
+    <section id="hero" className="min-h-[calc(100vh-80px)] w-full bg-orange-500">
+      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center">
+        <div className="px-5 md:px-0 md:grid md:grid-cols-12 gap-6">
 
-function FeatureItem({ children }) {
-  return (
-    <li className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
-      <FaCheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" aria-hidden />
-      <span>{children}</span>
-    </li>
-  );
-}
+          {/* Left Text + Typewriter */}
+          <div className="pt-10 xxs:pt-12 flex flex-col md:col-span-6">
+            {/* Hero Title */}
+            <h1 className="text-3xl xxs:text-4xl xs:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              {hello}<br/>
+              <span className="text-accent">{limon}</span><br/>
+              <span className="text-accent">{sheikh}</span>
+            </h1>
 
+            {/* Typewriter */}
+            <div className="mt-10 flex items-center flex-wrap gap-1 py-1">
+              <span className="text-[14px] sm:text-base">{title}</span>
+              <div className="flex items-center overflow-hidden whitespace-nowrap w-full max-w-[16rem] sm:max-w-[18rem] md:max-w-[20rem]">
+                <span className="text-xl sm:text-2xl font-bold typewriter">{titleName}</span>
+              </div>
+            </div>
 
+            {/* Description */}
+            <p className="pt-3 text-justify text-base">{description}</p>
 
+            {/* Social Icons */}
+            <div className="mt-6 grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
+              {socials.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ borderColor: social.color }}
+                  className="p-2 border border-black rounded-3xl transition-colors duration-300"
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = social.color;
+                    e.currentTarget.firstChild.style.color = "#fff";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.firstChild.style.color = social.color;
+                  }}
+                >
+                  <social.icon style={{ color: social.color }} size={20} />
+                </a>
+              ))}
+            </div>
 
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-5 pb-10">
+              <Button
+                title="View More"
+                border={false}
+                className="bg-accent text-gray px-4 py-2 font-semibold text-md md:text-lg hover:bg-hover transition-all duration-150 ease-linear"
+              />
+              <Button
+                title="Download CV"
+                border={true}
+                className="border-accent text-gray px-4 py-2 font-semibold text-md md:text-lg hover:bg-accent transition-all duration-150 ease-linear border-2"
+              />
+            </div>
+          </div>
 
-export default function Services() {
-  return (
-    <section id="services" className="py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+          {/* Right Hero Image */}
+          <div className="hidden md:block md:col-span-6">
+            <img src={image} alt="hero" className="w-full h-full object-cover" />
+          </div>
 
-        {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {cardData.map((svc) => {
-            const Icon = svc.icon;
-            return (
-              <article
-                key={svc.id}
-                className="relative bg-white border border-gray-100 dark:border-slate-700 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow duration-300"
-                aria-labelledby={`svc-${svc.id}-title`}
-                
-              >
-                {/* Accent ribbon / dot */}
-                <div className="absolute -top-3 right-4">
-                  <span
-                    className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-semibold ${svc.accent}`}
-                    aria-hidden
-                  >
-                    {svc.id.toUpperCase()}
-                  </span>
-                </div>
-
-                {/* Icon & title */}
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gray-50 dark:bg-slate-700/40 text-2xl">
-                    <Icon className="w-6 h-6 text-gray-700 dark:text-gray-100" aria-hidden />
-                  </div>
-                  <div>
-                    <h3 id={`svc-${svc.id}-title`} className="text-lg font-bold text-gray-900 ">
-                      {svc.title}
-                    </h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-300">{svc.tagline}</p>
-                  </div>
-                </div>
-
-                {/* Description */}
-                <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{svc.description}</p>
-
-                {/* Tools */}
-                <div className="mb-4 flex flex-wrap gap-2">
-                  {svc.tools.map((t, i) => {
-                    const Tool = t.icon;
-                    // If icon is FaPalette (not a SI icon), handle accordingly
-                    return <ToolBadge key={i} Tool={Tool} name={t.name} />;
-                  })}
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  {/* Features */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">Features</h4>
-                    <ul className="space-y-2">
-                      {svc.features.map((f, i) => (
-                        <FeatureItem key={i}>{f}</FeatureItem>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Deliverables */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">Deliverables</h4>
-                    <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                      {svc.deliverables.map((d, i) => (
-                        <li key={i}>{d}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* CTA */}
-                <div className="mt-6 flex items-center justify-between gap-4">
-                  <a
-                    href={svc.cta.href}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-sm font-medium shadow hover:from-yellow-500 hover:to-yellow-600 transition-colors"
-                  >
-                    <span>{svc.cta.label}</span>
-                    <FaExternalLinkAlt className="w-3.5 h-3.5 opacity-90" />
-                  </a>
-
-                  <div className="text-sm text-gray-500 dark:text-gray-400">
-                    <span className="font-medium text-gray-900 dark:text-white">Experience:</span>{" "}
-                    {svc.id === "frontend" ? "1+ year" : "—"}
-                  </div>
-                </div>
-              </article>
-            );
-          })}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Home;

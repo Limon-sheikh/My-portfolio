@@ -11,10 +11,9 @@ const Home = () => {
 
 
   return (
-    <section id="hero" className="min-h-[calc(100vh-80px)] sm:bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center       sm:bg-pink-400">
+    <section id="hero" className="min-h-[calc(100vh-80px)] w-full xxs:w-full xs:w-full xm:w-full sm:w-full md:w-full lg:w-full bg-orange-500">
+      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center      bg-pink-400">
         <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     sm:bg-green-500 ">
-
           <div className="pt-10 xxs:pt-12 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
             <div className="sm:bg-yellow-600 ">
               <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight ">
@@ -28,7 +27,9 @@ const Home = () => {
                 <span className="text-[14px] sm:text-base">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
-                    <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">{titleName}</span>
+                    <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">
+                      {titleName}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -89,7 +90,6 @@ const Home = () => {
             <div className="h-[100%] w-[100%]">
               <img src={image} alt="hero image" className="w-[100%] h-[100%]" />
             </div>
-            
           </div>
         </div>
       </div>
