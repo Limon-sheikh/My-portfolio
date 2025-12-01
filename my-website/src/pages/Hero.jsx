@@ -12,8 +12,8 @@ const Home = () => {
 
   return (
     <section id="hero" className="min-h-[calc(100vh-80px)] w-full xxs:w-full xs:w-full xm:w-full sm:w-full md:w-full lg:w-full bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center      bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     sm:bg-green-500 ">
+      <div className="container mx-auto px-5 xxs:px-0 min-h-[calc(100vh-80px)] md:flex flex-col justify-center      bg-pink-400">
+        <div id="wraper" className="md:grid md:grid-cols-12     bg-green-500 ">
           <div className="pt-10 xxs:pt-12 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
             <div className="sm:bg-yellow-600 ">
               <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight ">

@@ -12,8 +12,8 @@ const Navber = () => {
 
 
     return (
-      <header className="h-20 shadow-lg sticky top-0 z-50 bg-white ">
-        <nav className="container mx-auto h-full flex justify-between items-center px-5  md:px-0">
+      <header className="h-20 px-5 shadow-lg sticky top-0 z-50 bg-white ">
+        <nav className="container mx-auto h-full flex justify-between items-center md:px-0">
           <Logo />
           <NavLinks isOpen={isOpen}
             className="text-gray p-1 hover:text-accent inline-block duration-300 text-center font-semibold text-md md:bg-transparent      md:p-2 lg:text-lg"/>
