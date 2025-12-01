@@ -33,7 +33,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <p className="pt-3 text-justify text-base">{description}</p>
+              <div className=" py-2 min-h-28 bg-slate-400">
+                <p className="text-justify text-base">{description}</p>
+              </div>
             </div>
 
             <div className="mt-10 sm:bg-yellow-900 ">
