@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <section id="hero" className="min-h-[calc(100vh-80px)] w-full overflow-hidden sm:w-full md:w-full lg:w-full bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)] md:flex flex-col justify-center      bg-pink-400">
+      <div className="container mx-auto min-h-[calc(100vh-80px)] flex flex-col justify-center      bg-pink-400">
         <div id="wraper" className="px-5 md:grid md:grid-cols-12     bg-green-500 ">
           <div className="pt-10 xxs:pt-12 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
             <div className="sm:bg-yellow-600 ">
