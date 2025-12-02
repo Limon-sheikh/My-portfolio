@@ -9,7 +9,7 @@ import ExperienceTimeline from "./Experience";
 
 const TabContent = ({ activeTab }) => {
   return (
-    <div className="h-[220px] overflow-y-auto overflow-x-hidden wrap-break-word">
+    <div className="h-[200px] overflow-y-auto overflow-x-hidden wrap-break-word">
       {/* skills tab */}
       {activeTab === "skills" && (
         <div>

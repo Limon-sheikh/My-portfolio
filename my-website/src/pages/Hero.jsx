@@ -70,7 +70,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 py-6   sm:bg-orange-800">
+              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 pt-8 pb-2   sm:bg-orange-800">
                 <Button
                   title="view more"
                   border={false}

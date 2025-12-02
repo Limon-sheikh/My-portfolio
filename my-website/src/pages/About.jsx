@@ -2,31 +2,35 @@ import { useState } from "react";
 import TabButtons from "../components/about/TabButton";
 import { aboutInfo } from "../data/about";
 import TabContent from "../components/about/TabContent";
+
 import Test from "../components/Test";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <section className="py-20 bg-red-300 ">
-      <div className="container mx-auto rounded-xl overflow-hidden grid grid-cols-12 gap-4 shadow-md bg-green-200">
-        <div className="left-side col-span-6">
-          <div className="flex justify-center ">
-            <img src={aboutInfo.image} alt="" className="h-[550px]" />
+    <section id="about" className="py-20 sm:bg-red-400 ">
+      <div className="container mx-auto rounded-xl overflow-hidden shadow-md">
+        <div id="wraper" className="sm:bg-green-200">
+          <div className="flex flex-col items-center justify-center  sm:bg-fuchsia-500">
+            <div className="h-96 w-96 flex justify-center items-center     sm:bg-green-800 ">
+              <img src={aboutInfo.image} alt="about image" className="h-full w-full" />
+            </div>
           </div>
-        </div>
-        <div className="right-side col-span-6 px-10 pt-14">
-          <div>
-            <h1 className="text-5xl font-bold">{aboutInfo.title}</h1>
-            <p className="text-md pb-5 pt-3 text-justify">
-              {aboutInfo.description}
-            </p>
-          </div>
-          <div>
-            <TabButtons activeTab={activeTab} setActiveTab={setActiveTab} />
-          </div>
-          <div className="mt-6">
-            <TabContent activeTab={activeTab} />
+
+          <div className="px-5 pt-3 right-side col-span-6  sm:bg-red-700">
+            <div className="">
+              <h1 className="text-5xl font-bold">{aboutInfo.title}</h1>
+              <p className="text-md pb-5 pt-3 text-justify">
+                {aboutInfo.description}
+              </p>
+            </div>
+            <div>
+              <TabButtons activeTab={activeTab} setActiveTab={setActiveTab} />
+            </div>
+            <div className="mt-6">
+              <TabContent activeTab={activeTab} />
+            </div>
           </div>
         </div>
       </div>
