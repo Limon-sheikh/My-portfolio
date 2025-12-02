@@ -55,11 +55,11 @@ const Home = () => {
 
               <div className="flex justify-between gap-4 sm:flex-row sm:justify-start sm:gap-16 pt-8    sm:bg-orange-800">
                 <Button title="view more" border={false}
-                  className="bg-accent text-gray px-8 py-2 font-semibold text-lg  hover:bg-hover
+                  className="bg-accent text-gray px-7 py-2 font-semibold text-lg  hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "
                 />
                 <Button title="Downlod Cv" border={true}
-                  className="border-accent text-gray px-8 py-2 font-semibold text-lg hover:bg-accent
+                  className="border-accent text-gray px-7 py-2 font-semibold text-lg hover:bg-accent
                   transition-all duration-150 ease-linear border-2 rounded-md"
                 />
               </div>
