@@ -1,5 +1,5 @@
 
-import aboutImage from '../assets/image/about.png';
+import aboutImage from '../assets/image/sass-removebg-preview.png';
 
 
 export const aboutInfo = {

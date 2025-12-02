@@ -30,6 +30,7 @@ export const cardData = [
       { name: "React.js", icon: SiReact },
     ],
     accent: "text-yellow-700 bg-yellow-200",
+    shadow:"shadow-[0px_0px_14px_6px_rgba(234,_179,_8,_0.5)]",
     icon: FaLaptopCode,
   },
   
@@ -48,6 +49,7 @@ export const cardData = [
     ],
     link: "/wordpress-projects",
     accent: "text-pink-700 bg-pink-200",
+    shadow:"shadow-[0px_0px_20px_4px_rgba(236,_72,_153,_0.5)]",
     icon: SiWordpress,
   },
   
@@ -64,6 +66,7 @@ export const cardData = [
     ],
     link: "/theme-customization",
     accent: "text-violet-700 bg-violet-200",
+    shadow:"shadow-[0px_0px_20px_4px_rgba(147,_51,_234,_0.5)]",
     icon: TbLayout2Filled,
   },
   

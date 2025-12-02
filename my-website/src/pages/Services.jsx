@@ -5,8 +5,8 @@ import { cardData, serviceTitle } from "../data/services";
 
 const Services = () => {
   return (
-    <section className="py-20 bg-green-300">
-      <div className="container mx-auto bg-blue-300 px-5 md:px-0">
+    <section className="py-20 sm:bg-green-300">
+      <div className="container mx-auto sm:bg-blue-300 px-5 md:px-0">
         <div className="flex justify-center mb-16">
           <div className="text-center w-[600px]">
             <h6 className="">{serviceTitle.offer}</h6>
@@ -24,6 +24,7 @@ const Services = () => {
               tools={item.tools}
               accent={item.accent}
               tagline={item.tagline}
+              shadow={item.shadow}
             />
           ))}
         </div>

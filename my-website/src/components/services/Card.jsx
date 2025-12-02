@@ -1,8 +1,8 @@
 import React from "react";
 
-const Card = ({ title, description, tools, Icon, id, accent, tagline }) => {
+const Card = ({ title, description, tools, Icon, id, accent, tagline, shadow }) => {
   return (
-    <div className={`relative bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300`}>
+    <div className={`relative bg-white rounded-xl p-6 ${shadow} transition-all duration-300`}>
       <div className={`absolute -top-[12px] right-4 text-center rounded-xl`}>
         <span
           className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-semibold ${accent} `}
