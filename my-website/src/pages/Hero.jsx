@@ -23,7 +23,7 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="mt-10 xxs:pt-12 flex items-center flex-wrap gap-1 py-1      sm:bg-red-300">
+              <div className="mt-8 flex items-center flex-wrap gap-1 py-1      sm:bg-red-300">
                 <span className="text-[14px] sm:text-base">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
@@ -38,7 +38,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-20 sm:bg-yellow-900 ">
+            <div className="mt-14 sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a key={index} href={social.link} target="_blank"
@@ -53,23 +53,23 @@ const Home = () => {
                       e.currentTarget.firstChild.style.color = social.color;
                     }}
                   >
-                    <social.icon style={{color: social.color, transition: "all 0.4s ease-in-out"}} size={24}/>
+                    <social.icon style={{color: social.color, transition: "all 0.4s ease-in-out"}} size={26}/>
                   </a>
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 pt-8 pb-2   sm:bg-orange-800">
+              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 pt-6 pb-2   sm:bg-orange-800">
                 <Button
                   title="view more"
                   border={false}
                   className="
-                    bg-accent text-gray px-4 py-2 font-semibold text-md md:text-lg hover:bg-hover
+                    bg-accent text-gray px-4 py-3 font-semibold text-md md:text-lg hover:bg-hover
                     transition-all duration-150 ease-linear "
                 />
                 <Button
                   title="Downlod Cv"
                   border={true}
-                  className="border-accent text-gray px-4 py-2 font-semibold text-md md:text-lg hover:bg-accent
+                  className="border-accent text-gray px-4 py-3 font-semibold text-md md:text-lg hover:bg-accent
                   transition-all duration-150 ease-linear border-2"
                 />
               </div>
