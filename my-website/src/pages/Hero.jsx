@@ -9,7 +9,7 @@ const Home = () => {
     <section id="hero" className="min-h-[calc(100vh-80px)] w-full overflow-hidden sm:w-full md:w-full lg:w-full sm:bg-orange-500">
       <div className="container mx-auto min-h-[calc(100vh-80px)]    sm:bg-pink-400">
         <div id="wraper" className="px-5 md:grid md:grid-cols-12     sm:bg-green-500 ">
-          <div className="pt-10 xxs:pt-12 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
+          <div className="pt-10 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
             <div className="sm:bg-yellow-600 ">
               <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
@@ -18,18 +18,16 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="mt-8 flex items-center flex-wrap gap-1 py-1      sm:bg-red-300">
-                <span className="text-[14px] sm:text-base">{title}</span>
+              <div className="mt-10 flex items-center flex-wrap gap-1 py-1      sm:bg-red-300">
+                <span className="text-[14px] opacity-70 sm:text-base">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
-                    <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">
-                      {titleName}
-                    </span>
+                    <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">{titleName}</span>
                   </div>
                 </div>
               </div>
               <div className=" py-2 min-h-28 sm:bg-slate-400">
-                <p className="text-justify text-base">{description}</p>
+                <p className="text-justify text-base opacity-70">{description}</p>
               </div>
             </div>
 

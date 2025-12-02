@@ -18,19 +18,13 @@ const About = () => {
             </div>
           </div>
 
-          <div className="px-5 pt-10 right-side col-span-6  sm:bg-red-700">
-            <div className="">
-              <h1 className="text-5xl font-bold">{aboutInfo.title}</h1>
-              <p className="text-md pb-5 pt-3 text-justify">
-                {aboutInfo.description}
-              </p>
+          <div className="px-5 pt-14 right-side col-span-6  sm:bg-red-700">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold">{aboutInfo.title}</h1>
+              <p className="text-md pb-5 pt-3 text-justify opacity-70">{aboutInfo.description}</p>
             </div>
-            <div>
-              <TabButtons activeTab={activeTab} setActiveTab={setActiveTab} />
-            </div>
-            <div className="mt-6 overflow-hidden sm:bg-red-800">
-              <TabContent activeTab={activeTab} />
-            </div>
+            <div><TabButtons activeTab={activeTab} setActiveTab={setActiveTab}/></div>
+            <div className="mt-5 overflow-hidden"><TabContent activeTab={activeTab}/></div>
           </div>
         </div>
       </div>
