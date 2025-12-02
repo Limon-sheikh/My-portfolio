@@ -33,7 +33,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-14 sm:bg-yellow-900 ">
+            <div className="mt-20 sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a key={index} href={social.link} target="_blank"
@@ -53,13 +53,13 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 pt-6    sm:bg-orange-800">
+              <div className="flex justify-between gap-4 sm:flex-row sm:justify-start sm:gap-16 pt-6    sm:bg-orange-800">
                 <Button title="view more" border={false}
-                  className="bg-accent text-gray px-4 py-2 font-semibold text-lg  hover:bg-hover
+                  className="bg-accent text-gray px-8 py-2 font-semibold text-lg  hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "
                 />
                 <Button title="Downlod Cv" border={true}
-                  className="border-accent text-gray px-4 py-2 font-semibold text-lg hover:bg-accent
+                  className="border-accent text-gray px-8 py-2 font-semibold text-lg hover:bg-accent
                   transition-all duration-150 ease-linear border-2 rounded-md"
                 />
               </div>
