@@ -53,7 +53,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="flex justify-between gap-4 sm:flex-row sm:justify-start sm:gap-16 pt-6    sm:bg-orange-800">
+              <div className="flex justify-between gap-4 sm:flex-row sm:justify-start sm:gap-16 pt-8    sm:bg-orange-800">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-8 py-2 font-semibold text-lg  hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "
