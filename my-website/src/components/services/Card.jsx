@@ -16,10 +16,12 @@ const Card = ({ title, description, tools, Icon, id, accent, tagline, shadow }) 
         <div className={`inline-block p-3 rounded-xl ${accent}`}>
           {Icon && <Icon size={35} />}
         </div>
-        <div className="h-44 mt-2 overflow-y-auto overflow-x-hidden break-words">
+        <div className="mt-2">
           <h3 className="text-xl font-semibold mb-1">{title}</h3>
           <h6 className="mb-4">{tagline}</h6>
-          <p className="text-gray-600 text-start">{description}</p>
+          <div className="max-h-32 mt-2 overflow-y-auto overflow-x-hidden break-words">
+            <p className="text-gray-600 text-start">{description}</p>
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-3 mt-4">
