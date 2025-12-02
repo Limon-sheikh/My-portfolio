@@ -3,12 +3,7 @@ import Button from "../components/Navber/Button";
 import "../App.css"; //custome typewriter
 
 const Home = () => {
-  const {hello, limon, sheikh, title, titleName, description, socials, image,} = HeroData[0];
-  
-  
-  // h-[calc(100vh-90px)], text-[clamp(3rem,11vw,5rem)]
-  // <section className="min-h-dvh bg-orange-500"> 
-
+  const {hello, limon, sheikh, title, titleName, description, socials, image} = HeroData[0];
 
   return (
     <section id="hero" className="min-h-[calc(100vh-80px)] w-full overflow-hidden sm:w-full md:w-full lg:w-full sm:bg-orange-500">
@@ -58,19 +53,14 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 pt-6 pb-2   sm:bg-orange-800">
-                <Button
-                  title="view more"
-                  border={false}
-                  className="
-                    bg-accent text-gray px-4 py-3 font-semibold text-md md:text-lg hover:bg-hover
-                    transition-all duration-150 ease-linear "
+              <div className="flex flex-col sm:flex-row gap-4 sm:justify-start sm:gap-16 pt-6    sm:bg-orange-800">
+                <Button title="view more" border={false}
+                  className="bg-accent text-gray px-4 py-2 font-semibold text-lg  hover:bg-hover
+                    transition-all duration-150 ease-linear rounded-md "
                 />
-                <Button
-                  title="Downlod Cv"
-                  border={true}
-                  className="border-accent text-gray px-4 py-3 font-semibold text-md md:text-lg hover:bg-accent
-                  transition-all duration-150 ease-linear border-2"
+                <Button title="Downlod Cv" border={true}
+                  className="border-accent text-gray px-4 py-2 font-semibold text-lg hover:bg-accent
+                  transition-all duration-150 ease-linear border-2 rounded-md"
                 />
               </div>
             </div>

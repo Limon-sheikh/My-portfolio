@@ -54,7 +54,7 @@ export const cardData = [
   },
   
   {
-    id: "theme",
+    id: "wordpress",
     title: "Theme Customization",
     tagline: "Tailored to your brand",
     description:

@@ -14,7 +14,7 @@ const Services = () => {
             <p>{serviceTitle.description}</p>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid gap-14">
           {cardData.map((item) => (
             <Card
               id={item.id}

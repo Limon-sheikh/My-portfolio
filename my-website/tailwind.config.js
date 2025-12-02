@@ -7,11 +7,11 @@ export default {
       // 'xxs': '360px', // Very small devices
       // 'xs': '450px',  // Small phones
       // 'xm': '500px',  // Medium phones
-      'sm': '640px',  // Default Tailwind small
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+      // 'sm': '640px',  // Default Tailwind small
+      // 'md': '768px',
+      // 'lg': '1024px',
+      // 'xl': '1280px',
+      // '2xl': '1536px',
     },
     extend: {
       colors: {
