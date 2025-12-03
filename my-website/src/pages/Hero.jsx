@@ -31,7 +31,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-[12vh] sm:bg-yellow-900 ">
+            <div className="mt-[11vh] sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a key={index} href={social.link} target="_blank"
