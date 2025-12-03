@@ -14,10 +14,10 @@ const Card = ({ title, description, tools, Icon, id, accent, tagline, shadow }) 
           {Icon && <Icon size={35} />}
         </div>
         <div className="mt-2">
-          <h3 className="text-xl font-semibold mb-1">{title}</h3>
-          <h6 className="mb-4">{tagline}</h6>
+          <h3 className="text-xl font-bold mb-1">{title}</h3>
+          <h6 className="mb-4 font-semibold opacity-60">{tagline}</h6>
           <div className="max-h-32 mt-2 overflow-y-auto overflow-x-hidden break-words">
-            <p className="text-gray-600 text-start">{description}</p>
+            <p className="text-gray-600 text-start font-medium opacity-60">{description}</p>
           </div>
         </div>
 

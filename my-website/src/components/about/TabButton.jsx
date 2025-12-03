@@ -4,7 +4,7 @@ import { menuItems } from "../../data/about";
 
 function TabButtons({ activeTab, setActiveTab }) {
   return (
-    <ul className="flex flex-wrap text-md font-bold gap-4 opacity-70">
+    <ul className="flex flex-wrap text-md gap-4 font-semibold opacity-60">
       {menuItems.map((tabBtn) => (
         <li key={tabBtn.id}>
           <button onClick={() => setActiveTab(tabBtn.id)} 

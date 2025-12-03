@@ -16,12 +16,10 @@ function EducationTimeline() {
           </div>
 
           {/* Content */}
-          <h3 className="text-lg md:text-xl font-bold text-gray-900">{item.degree}</h3>
-          <div className="opacity-70">
-            <span className="text-gray-500 text-sm block">{item.institute}</span>
-            <span className="text-gray-400 text-sm">{item.year}</span>
-            <p className="text-gray-600 mt-2 text-justify">{item.details}</p>
-          </div>
+          <h3 className="text-lg md:text-xl font-bold">{item.degree}</h3>
+            <span className="text-gray-500 text-sm block font-medium opacity-60">{item.institute}</span>
+            <span className="text-gray-400 text-sm font-medium opacity-60">{item.year}</span>
+            <p className="text-gray-600 mt-2 text-justify font-medium opacity-60">{item.details}</p>
         </div>
       ))}
     </div>

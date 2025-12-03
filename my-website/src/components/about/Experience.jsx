@@ -17,9 +17,9 @@ function ExperienceTimeline() {
           </div>
           
           {/* Content */}
-          <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
-          <span className="text-gray-500 text-sm">{item.duration}</span>
-          <p className="text-gray-600 mt-2 text-justify">{item.description}</p>
+          <h3 className="text-xl font-semibold">{item.title}</h3>
+          <span className="text-gray-500 text-sm font-medium opacity-60">{item.duration}</span>
+          <p className="text-gray-600 mt-2 text-justify font-medium opacity-60">{item.description}</p>
         </div>
       ))}
     </div>
