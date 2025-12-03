@@ -6,12 +6,12 @@ const Home = () => {
   const {hello, limon, sheikh, title, titleName, description, socials, image} = HeroData[0];
 
   return (
-    <section id="hero" className="min-h-[calc(100vh-80px)] w-full overflow-hidden sm:w-full md:w-full lg:w-full sm:bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)]    sm:bg-pink-400">
+    <section id="hero" className="min-h-[calc(100vh-80px)] w-full overflow-hidden sm:w-full md:w-full lg:w-full bg-orange-500">
+      <div className="container mx-auto min-h-[calc(100vh-80px)]    bg-pink-400">
         <div id="wraper" className="px-5 md:grid md:grid-cols-12     sm:bg-green-500 ">
           <div className="pt-10 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
             <div className="sm:bg-yellow-600 ">
-              <h1 className="text-6xl md:text-6xl lg:text-7xl font-bold leading-tight ">
+              <h1 className="text-[15vw] md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
@@ -31,7 +31,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-20 sm:bg-yellow-900 ">
+            <div className="mt-[12vh] sm:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a key={index} href={social.link} target="_blank"
@@ -53,11 +53,11 @@ const Home = () => {
 
               <div className="flex justify-between gap-4 sm:flex-row sm:justify-start sm:gap-16 pt-8    sm:bg-orange-800">
                 <Button title="view more" border={false}
-                  className="bg-accent text-gray px-7 py-2 font-semibold text-lg  hover:bg-hover
+                  className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "
                 />
                 <Button title="Downlod Cv" border={true}
-                  className="border-accent text-gray px-7 py-2 font-semibold text-lg hover:bg-accent
+                  className="border-accent text-gray px-7 py-2 font-semibold text-[4vw] hover:bg-accent
                   transition-all duration-150 ease-linear border-2 rounded-md"
                 />
               </div>
