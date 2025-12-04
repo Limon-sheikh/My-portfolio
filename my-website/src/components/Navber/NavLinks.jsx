@@ -2,15 +2,16 @@
 import { Link } from "react-router-dom";
 import mainMenu from "../../data/mainMenu";
 
-const NavLinks = ({ isOpen }) => {
+const NavLinks = ({ isOpen, className }) => {
+  // ${isOpen ? 'block' : 'hidden'}
     return (
-    <ul className={`flex flex-col p-4 absolute top-20 left-0 w-full gap-2 transition-all duration-300 ease-in-out bg-white
-        md:flex-row md:items-center md:bg-transparent md:static md:w-auto md:p-0 md:gap-0 lg:gap-5 ${isOpen ? 'block' : 'hidden'} md:flex `}>
+    // <ul className={` border w-full gap-2 transition-all duration-300 ease-in-out bg-white `}>
+        <ul className={` transition-all duration-300 ease-in-out
+        md:flex-row md:items-center md:static md:w-auto md:p-0 md:gap-0 lg:gap-5 md:flex ${className} `}>
         {mainMenu.map((link) => (
             <li key={link.id}>
             <Link to={link.path} 
-              className="text-gray p-4 hover:text-accent bg-accent rounded-md inline-block duration-300 w-full text-center 
-              font-semibold text-md md:bg-transparent md:p-2 lg:text-lg">
+              className="bg-accent inline-block text-center w-full font-semibold text-md md:bg-transparent md:p-2 lg:text-lg">
               {link.name}
             </Link>
             </li>
