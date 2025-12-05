@@ -37,14 +37,14 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-lg bg-white/10 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/10 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
         <nav className="mt-20">
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
       </div>
 
       {/* Backdrop Layer */}
-      {open && (<div onClick={toggle} className="fixed inset-0 md:hidden bg-black/30 backdrop-blur-md z-[60] transition-opacity duration-300"></div>)}
+      {open && (<div onClick={toggle} className="fixed inset-0 md:hidden bg-black/30 backdrop-blur-sm z-[60] transition-opacity duration-300"></div>)}
     </>
   );
 };
