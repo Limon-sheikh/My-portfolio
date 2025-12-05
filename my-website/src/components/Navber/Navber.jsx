@@ -39,8 +39,8 @@ const Navbar = () => {
         <nav className=" ">
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
-        <div className="bg-red-600">
-          <Button title='hire me' border={false} className="text-2xl text-gray capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear"/>
+        <div className="py-2 flex justify-around items-center">
+          <Button title='hire me' border={false} className="text-xl font-semibold text-gray capitalize rounded-md px-4 py-1 bg-accent hover:bg-hover transition-all duration-150 ease-linear"/>
         </div>
       </div>
 
