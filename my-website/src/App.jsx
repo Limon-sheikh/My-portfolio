@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 // import Projects from "./pages/Projects";
 // import Contact from "./pages/Contact";
 // import Footer from "./pages/Footer";
-import Test from './components/Test'
+// import Test from './components/Test'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           {/* <Route path="/projects" element={<Projects />} /> */}
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Routes>
-        <Test/>
+        {/* <Test/> */}
       </main>
       {/* <Footer/> */}
     </>

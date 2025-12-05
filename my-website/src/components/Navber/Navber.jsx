@@ -25,10 +25,9 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] bg-white md:hidden transform transition-transform duration-300 ease-in-out
-          ${open ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-2xl bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
         <nav className="mt-20">
-          <NavLinks className="md:hidden flex flex-col gap-3 items-center "/>
+          <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center "/>
           {/* <a onClick={toggle} href="#" className="hover:text-accent transition">Home</a>
           <a onClick={toggle} href="#" className="hover:text-accent transition">About</a>
           <a onClick={toggle} href="#" className="hover:text-accent transition">Projects</a>
