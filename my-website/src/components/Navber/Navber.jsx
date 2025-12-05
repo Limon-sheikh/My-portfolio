@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from './Logo';
 import NavLinks from './NavLinks';
 import Button from './Button';
@@ -9,6 +9,20 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const toggle = () => setOpen(!open);
+
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";  // ✅ scroll বন্ধ
+    } else {
+      document.body.style.overflow = "auto";    // ✅ scroll চালু
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto";    // ✅ safety reset
+    };
+  }, [open]);
+  
 
   return (
     <>
@@ -27,11 +41,7 @@ const Navbar = () => {
       {/* Mobile Menu Drawer */}
       <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-2xl bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
         <nav className="mt-20">
-          <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center "/>
-          {/* <a onClick={toggle} href="#" className="hover:text-accent transition">Home</a>
-          <a onClick={toggle} href="#" className="hover:text-accent transition">About</a>
-          <a onClick={toggle} href="#" className="hover:text-accent transition">Projects</a>
-          <a onClick={toggle} href="#" className="hover:text-accent transition">Contact</a> */}
+          <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
       </div>
 
