@@ -30,21 +30,22 @@ const Navbar = () => {
           <Logo/>
           <NavLinks className="hidden md:block"/>
           <MenuToggle isOpen={open} toggle={toggle} />
-          <Button title='hire me' border={false}  
-            className="text-2xl text-gray md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font-bold bg-accent 
-          hover:bg-hover transition-all duration-150 ease-linear hidden md:block"/>
+          <Button title='hire me' border={false} className="text-2xl text-gray md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"/>
         </div>
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/10 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
-        <nav className="mt-20">
+      <div className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/10 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" :  "-translate-x-full" } flex flex-col justify-around`}>
+        <nav className=" bg-green-500">
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
+        <div className="bg-red-600">
+          <Button title='hire me' border={false} className="text-2xl text-gray capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear"/>
+        </div>
       </div>
 
       {/* Backdrop Layer */}
-      {open && (<div onClick={toggle} className="fixed inset-0 md:hidden bg-black/30 backdrop-blur-sm z-[60] transition-opacity duration-300"></div>)}
+      {open && (<div onClick={toggle} className="fixed inset-0 md:hidden bg-black/30 backdrop-blur-md z-[60] transition-opacity duration-300"></div>)}
     </>
   );
 };
