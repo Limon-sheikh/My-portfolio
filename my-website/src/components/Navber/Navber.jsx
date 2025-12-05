@@ -7,9 +7,7 @@ import MenuToggle from '../MenuToggle';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
   const toggle = () => setOpen(!open);
-
 
   useEffect(() => {
     if (open) {
@@ -26,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* desctop menu */}
+      {/* Desctop menu */}
       <header className="w-full z-50 shadow-lg ">
         <div className="container mx-auto px-5 md:px-0 h-16 flex items-center justify-between">
           <Logo/>
@@ -39,7 +37,7 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-2xl bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-2xl bg-white/20 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "translate-x-full"}`}>
         <nav className="mt-20">
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
