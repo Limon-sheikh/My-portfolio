@@ -6,7 +6,8 @@ import { FiMenu, FiX } from "react-icons/fi";
 const MenuToggle = ({ isOpen, toggle }) => {
     return (
         <button onClick={toggle} className="md:hidden z-50 transition-all duration-1000">
-            {isOpen ? <FiX size={40} /> : <FiMenu size={40} />}
+            {/* {isOpen ? null : <FiMenu size={40} />} */}
+            <FiMenu size={40}/>
         </button>
     );
 };

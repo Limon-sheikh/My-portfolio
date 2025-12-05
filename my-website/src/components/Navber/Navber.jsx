@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       {/* desctop menu */}
-      <header className="w-full z-50 shadow-lg">
+      <header className="w-full z-50 shadow-lg ">
         <div className="container mx-auto px-5 md:px-0 h-16 flex items-center justify-between">
           <Logo/>
           <NavLinks className="hidden md:block"/>
@@ -27,8 +27,8 @@ const Navbar = () => {
       {/* Mobile Menu Drawer */}
       <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] bg-white md:hidden transform transition-transform duration-300 ease-in-out
           ${open ? "translate-x-0" : "translate-x-full"}`}>
-        <nav className="border bg-green-500 mt-20">
-          <NavLinks className="md:hidden flex flex-col gap-6 "/>
+        <nav className="mt-20">
+          <NavLinks className="md:hidden flex flex-col gap-3 items-center "/>
           {/* <a onClick={toggle} href="#" className="hover:text-accent transition">Home</a>
           <a onClick={toggle} href="#" className="hover:text-accent transition">About</a>
           <a onClick={toggle} href="#" className="hover:text-accent transition">Projects</a>
