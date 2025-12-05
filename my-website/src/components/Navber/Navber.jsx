@@ -35,7 +35,7 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/10 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" :  "-translate-x-full" } flex flex-col justify-around`}>
+      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-lg bg-white/20 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" :  "translate-x-full" } flex flex-col justify-around`}>
         <nav className=" bg-green-500">
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
 
       {/* Backdrop Layer */}
-      {open && (<div onClick={toggle} className="fixed inset-0 md:hidden bg-black/30 backdrop-blur-md z-[60] transition-opacity duration-300"></div>)}
+      {open && (<div onClick={toggle} className="fixed inset-0 md:hidden bg-black/40 backdrop-blur-sm z-[60] transition-opacity duration-300"></div>)}
     </>
   );
 };
