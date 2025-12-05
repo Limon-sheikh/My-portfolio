@@ -35,8 +35,8 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/20 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" :  "translate-x-full" } flex flex-col justify-around`}>
-        <nav className=" bg-green-500">
+      <div className={`fixed top-0 right-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" :  "translate-x-full" } flex flex-col justify-around`}>
+        <nav className=" ">
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
         <div className="bg-red-600">
