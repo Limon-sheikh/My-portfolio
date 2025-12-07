@@ -45,9 +45,8 @@ const Navbar = () => {
     <>
       {/* Desctop menu */}
       <header className="w-full h-20 flex items-center z-50 shadow-lg ">
-        <nav
-          className={`w-full bg-white z-50 md:px-0 h-20 ${isSticky ? "fixed top-0 " : "relative "}`}>
-          <div className="container mx-auto h-20 flex items-center justify-between bg-fuchsia-600">
+        <nav className={`w-full bg-white z-50  h-20 ${isSticky ? "fixed top-0" : "relative "}`}>
+          <div className="container mx-auto h-20 flex items-center justify-between px-5 md:px-0 bg-fuchsia-600">
             <Logo />
             <NavLinks className="hidden md:block" />
             <MenuToggle isOpen={open} toggle={toggle} />
