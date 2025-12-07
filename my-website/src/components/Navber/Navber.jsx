@@ -25,13 +25,13 @@ const Navbar = () => {
   return (
     <>
       {/* Desctop menu */}
-      <header className="w-full z-50 shadow-lg ">
-        <div className="container mx-auto px-5 md:px-0 h-16 flex items-center justify-between">
+      <header className="w-full h-20 bg-red-500 flex items-center z-50 shadow-lg ">
+        <nav className="container mx-auto bg-green-400 px-5 md:px-0 h-16 flex items-center justify-between">
           <Logo/>
           <NavLinks className="hidden md:block"/>
           <MenuToggle isOpen={open} toggle={toggle} />
-          <Button title='hire me' border={false} className="text-2xl text-gray md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"/>
-        </div>
+          <Button title='hire me' border={false} className="text-2xl text-gray rounded-md md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"/>
+        </nav>
       </header>
 
       {/* Mobile Menu Drawer */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
         <div className="py-2 flex justify-around items-center">
-          <Button title='hire me' border={false} className="text-xl font-semibold text-gray capitalize rounded-md px-4 py-1 bg-accent hover:bg-hover transition-all duration-150 ease-linear"/>
+          <Button onLinkClick={toggle} title='hire me' border={false} className="text-xl font-semibold text-gray capitalize rounded-md px-4 py-1 bg-accent hover:bg-hover transition-all duration-150 ease-linear"/>
         </div>
       </div>
 

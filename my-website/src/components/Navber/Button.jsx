@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 
-const Button = ({title, className, border}) => {
+const Button = ({title, className, border, onLinkClick}) => {
     
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -39,7 +39,7 @@ const Button = ({title, className, border}) => {
       
 
     return (
-        <button onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}
+        <button onClick={onLinkClick} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}
             className={`${className} ${border ? 'border' : ''} `}
             style={{transform: `translate(${position.x}px, ${position.y}px)`}}>
             {title}
