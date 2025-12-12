@@ -1,43 +1,47 @@
-import React from 'react';
-import About from '../pages/About'
+
 import { useEffect, useState } from "react";
 
 
 const Test = () => {
 
-  const [isSticky, setIsSticky] = useState(false);
+  const [hasShadow, setHasShadow] = useState(false);
 
 useEffect(() => {
   const handleScroll = () => {
-    if (window.scrollY > 80) {
-      setIsSticky(true);
+    if (window.scrollY > 2) {
+      setHasShadow(true);
     } else {
-      setIsSticky(false);
+      setHasShadow(false);
     }
   };
 
   window.addEventListener("scroll", handleScroll);
-
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
 
 
 
 
+
+
   return (
-    <div>
+    <div className="h-24">
       <header
-  className={`w-full h-20 flex items-center z-50 transition-all duration-300 ease-in-out`}
+  className={`
+    w-full flex items-center z-50 fixed top-0 bg-red-500 transition-all duration-300 ease-in-out
+    ${hasShadow ? "shadow-2xl" : ""}
+  `}
 >
-  <nav className={`container mx-auto h-20 bg-fuchsia-600 flex gap-6 text-white px-5 
-  ${isSticky ? "fixed top-0 " : "relative bg-red-500"}`}>
-    <li>home</li>
-    <li>about</li>
-    <li>list</li>
+  <nav className="container mx-auto flex justify-between items-center px-5 h-20">
+    <li><a href="">dfdkj</a></li>
+    <li><a href="">dfdkj</a></li>
+    <li><a href="">dfdkj</a></li>
+    <li><a href="">dfdkj</a></li>
   </nav>
 </header>
-
     </div>
+
+
   );
 };
 

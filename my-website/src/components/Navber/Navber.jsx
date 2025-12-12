@@ -12,13 +12,13 @@ const Navbar = () => {
   // mobile device navber show and scrolling stop hendeler
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = "hidden"; // ✅ scroll বন্ধ
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // ✅ scroll চালু
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto"; // ✅ safety reset
+      document.body.style.overflow = "auto"; // safety reset
     };
   }, [open]);
 
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 90) {
+      if (window.scrollY > 0) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -44,9 +44,9 @@ const Navbar = () => {
   return (
     <>
       {/* Desctop menu */}
-      <header className="w-full h-20 flex items-center z-50 shadow-lg ">
-        <nav className={`w-full bg-white z-50  h-20 ${isSticky ? "fixed top-0" : "relative "}`}>
-          <div className="container mx-auto h-20 flex items-center justify-between px-5 md:px-0 bg-fuchsia-600">
+      <header className="w-full h-20 flex items-center">
+        <nav className={`w-full bg-white z-50 h-20 transition-all duration-150 ease-in-out fixed ${isSticky ? " shadow-[0px_12px_11px_-5px_rgba(0,_0,_0,_0.1)]" : "relative "}`}>
+          <div className="container mx-auto h-20 flex items-center justify-between px-5 md:px-0 ">
             <Logo />
             <NavLinks className="hidden md:block" />
             <MenuToggle isOpen={open} toggle={toggle} />
@@ -59,10 +59,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out ${
-          open ? "translate-x-0" : "-translate-x-full"
-        } flex flex-col justify-around`}
-      >
+        className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out 
+        ${open ? "translate-x-0" : "-translate-x-full"} flex flex-col justify-around`}>
         <nav className=" ">
           <NavLinks
             onLinkClick={toggle}
@@ -91,39 +89,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-// const Navber = () => {
-
-//     const [isOpen, setIsOpen] = useState(false);
-//     const toggleMenu = () => setIsOpen(!isOpen);
-
-
-//     return (
-//       <header className="h-20 px-5 shadow-lg sticky top-0 z-50 bg-white ">
-//         <nav className="container mx-auto h-full flex justify-between items-center md:px-0">
-//           <Logo />
-//           <NavLinks isOpen={isOpen}
-//             className="text-gray p-1 hover:text-accent inline-block duration-300 text-center font-semibold text-md md:bg-transparent      md:p-2 lg:text-lg"/>
-//           <div className="flex items-center gap-4">
-//             <MenuToggle isOpen={isOpen} toggle={toggleMenu} />
-//             <Button title='hire me' border={false}
-//               className="
-//                 text-2xl text-gray md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font-bold bg-accent 
-//                 hover:bg-hover transition-all duration-150 ease-linear hidden md:block
-//               "/>
-//           </div>
-//         </nav>
-//       </header>
-//     );
-// };
-
-// export default Navber;
