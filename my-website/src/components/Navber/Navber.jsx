@@ -25,7 +25,6 @@ const Navbar = () => {
 
   // navber sticky state hendeler
   const [isSticky, setIsSticky] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -36,22 +35,20 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
 
   return (
     <>
-      {/* Desctop menu */}
-      <header className="w-full h-20 flex items-center">
-        <nav className={`w-full bg-white z-50 h-20 transition-all duration-150 ease-in-out fixed ${isSticky ? " shadow-[0px_12px_11px_-5px_rgba(0,_0,_0,_0.1)]" : "relative "}`}>
+      <header className="w-full h-20 flex items-center ">
+        <nav className={`w-full bg-white fixed z-50 h-20 transition-all duration-150 ease-in-out ${isSticky ? "shadow-[0px_12px_11px_-5px_rgba(0,_0,_0,_0.1)]" : "relative "}`}>
           <div className="container mx-auto h-20 flex items-center justify-between px-5 md:px-0 ">
             <Logo />
             <NavLinks className="hidden md:block" />
             <MenuToggle isOpen={open} toggle={toggle} />
             <Button title="hire me" border={false}
-              className="text-2xl text-gray rounded-md md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
+              className="text-2xl text-gray rounded-md md:font-bold md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
             />
           </div>
         </nav>
@@ -61,17 +58,11 @@ const Navbar = () => {
       <div
         className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out 
         ${open ? "translate-x-0" : "-translate-x-full"} flex flex-col justify-around`}>
-        <nav className=" ">
-          <NavLinks
-            onLinkClick={toggle}
-            className="md:hidden flex flex-col gap-3 items-center"
-          />
+        <nav>
+          <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
         </nav>
         <div className="py-2 flex justify-around items-center">
-          <Button
-            onLinkClick={toggle}
-            title="hire me"
-            border={false}
+          <Button onLinkClick={toggle} title="hire me" border={false}
             className="text-xl font-semibold text-gray capitalize rounded-md px-4 py-1 bg-accent hover:bg-hover transition-all duration-150 ease-linear"
           />
         </div>
@@ -79,10 +70,7 @@ const Navbar = () => {
 
       {/* Backdrop Layer */}
       {open && (
-        <div
-          onClick={toggle}
-          className="fixed inset-0 md:hidden bg-black/10 backdrop-blur-sm z-[60] transition-opacity duration-300"
-        ></div>
+        <div onClick={toggle} className="fixed inset-0 md:hidden bg-black/10 backdrop-blur-sm z-[60] transition-opacity duration-300"></div>
       )}
     </>
   );

@@ -8,7 +8,7 @@ function EducationTimeline() {
       {educationData.map((item, index) => (
         <div key={index} className="relative pl-12 mb-6">
           {/* Vertical Line */}
-          <div className="absolute top-0 left-5 h-full border-l-2"></div>
+          <div className="absolute top-0 left-5 h-full border-l-2 border-accent"></div>
 
           {/* Circle */}
           <div className="absolute left-0 top-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center font-bold">

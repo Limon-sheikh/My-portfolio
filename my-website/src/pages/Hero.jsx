@@ -11,7 +11,7 @@ const Home = () => {
         <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     sm:bg-green-500 ">
           <div className="pt-10 flex flex-col md:col-span-6      sm:bg-yellow-300 ">
             <div className="sm:bg-yellow-600 ">
-              <h1 className="text-[15vw] md:text-6xl lg:text-7xl font-bold leading-tight ">
+              <h1 className="text-[14vw] sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
                 <br />
