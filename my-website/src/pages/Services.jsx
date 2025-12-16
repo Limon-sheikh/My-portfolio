@@ -14,7 +14,7 @@ const Services = () => {
             <p className="font-medium opacity-60">{serviceTitle.description}</p>
           </div>
         </div>
-        <div className="grid gap-14">
+        <div className="grid gap-14 grid-cols-1 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {cardData.map((item) => (
             <Card
               id={item.id}

@@ -51,7 +51,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="flex justify-between gap-4 md:justify-start md:gap-16 py-8  md:bg-orange-800">
+              <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-8  md:bg-orange-800">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] sm:text-[3vw] md:text-xl hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "
