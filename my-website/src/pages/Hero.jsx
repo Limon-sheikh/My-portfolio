@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <section id="hero" className="min-h-[calc(100vh)] lg:flex lg:items-center overflow-hidden md:bg-orange-500">
       <div className="container mx-auto    md:bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12    md:bg-green-500 ">
-          <div className="pt-10 flex flex-col md:col-span-6      md:bg-yellow-300 ">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12 lg:gap-2   md:bg-green-500 ">
+          <div className="pt-10 md:pt-0 flex flex-col md:col-span-6      md:bg-yellow-300 ">
             <div className="md:bg-yellow-600 ">
               <h1 className="text-[12vw] sm:text-[10vw] md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
@@ -31,7 +31,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-[11vh] md:bg-yellow-900 ">
+            <div className="mt-[11vh] lg:mt-14 md:bg-yellow-900 ">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a key={index} href={social.link} target="_blank"
@@ -65,8 +65,8 @@ const Home = () => {
           </div>
 
           <div className="hidden md:block md:col-span-6   bg-blue-400">
-            <div className=" lg:bg-blue-950">
-              <img src={image} alt="hero image" className=" " />
+            <div className="lg:h-full lg:flex lg:justify-center lg:bg-blue-950">
+              <img src={image} alt="hero image" className="" />
             </div>
           </div>
         </div>
