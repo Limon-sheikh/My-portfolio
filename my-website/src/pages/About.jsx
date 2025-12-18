@@ -9,11 +9,11 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
 
   return (
-    <section id="about" className="lg:bg-red-400 ">
+    <section id="about" className="">
       <div className="container mx-auto px-5 py-20">
-        <div id="wraper" className="rounded-xl overflow-hidden shadow-[0px_0px_15px_7px_rgba(0,_0,_0,_0.1)] lg:grid lg:grid-cols-2 lg:bg-green-200">
-          <div className="flex flex-col items-center justify-center lg:bg-fuchsia-500">
-            <div className="flex justify-center items-center lg:w-full lg:h-full lg:bg-green-600">
+        <div id="wraper" className="rounded-xl overflow-hidden shadow-[0px_0px_15px_7px_rgba(0,_0,_0,_0.1)] lg:grid lg:grid-cols-2">
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex justify-center items-center lg:w-full lg:h-full">
               <img src={aboutInfo.image} alt="about image" className="px-5 md:px-0 lg:h-full" />
             </div>
           </div>
@@ -28,7 +28,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <hr />
     </section>
   );
 };

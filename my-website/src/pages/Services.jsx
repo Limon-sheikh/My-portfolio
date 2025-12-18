@@ -5,8 +5,8 @@ import { cardData, serviceTitle } from "../data/services";
 
 const Services = () => {
   return (
-    <section className="lg:bg-green-300">
-      <div className="container mx-auto lg:bg-blue-300 px-5 py-20 md:px-0">
+    <section className="">
+      <div className="container mx-auto px-5 py-20 md:px-0">
         <div className="flex justify-center mb-16">
           <div className="text-center w-[600px]">
             <h6 className="font-semibold opacity-60">{serviceTitle.offer}</h6>
@@ -14,7 +14,7 @@ const Services = () => {
             <p className="font-medium opacity-60">{serviceTitle.description}</p>
           </div>
         </div>
-        <div className="grid gap-14 grid-cols-1  lg:grid-cols-3">
+        <div className="grid gap-14 grid-cols-1 lg:grid-cols-3">
           {cardData.map((item) => (
             <Card
               id={item.id}

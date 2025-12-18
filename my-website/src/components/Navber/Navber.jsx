@@ -47,16 +47,18 @@ const Navbar = () => {
             <Logo />
             <NavLinks className="hidden md:block" />
             <MenuToggle isOpen={open} toggle={toggle} />
-            <Button title="hire me" border={false}
+            <div className="flex items-center justify-center gap-12">
+              <span></span>
+              <Button title="hire me" border={false}
               className="text-2xl text-gray rounded-md md:font-bold md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
             />
+            </div>
           </div>
         </nav>
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div
-        className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out 
+      <div className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out 
         ${open ? "translate-x-0" : "-translate-x-full"} flex flex-col justify-around`}>
         <nav>
           <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>

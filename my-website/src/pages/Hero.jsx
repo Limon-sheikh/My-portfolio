@@ -6,11 +6,11 @@ const Home = () => {
   const {hello, limon, sheikh, title, titleName, description, socials, image} = HeroData[0];
 
   return (
-    <section id="hero" className="min-h-[calc(100vh)] lg:flex lg:items-center overflow-hidden md:bg-orange-500">
-      <div className="container mx-auto    md:bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12 lg:gap-2   md:bg-green-500 ">
-          <div className="pt-10 md:pt-0 flex flex-col md:col-span-6      md:bg-yellow-300 ">
-            <div className="md:bg-yellow-600 ">
+    <section id="hero" className="min-h-[calc(100vh)] md:flex md:items-center overflow-hidden">
+      <div className="container mx-auto">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12 lg:gap-2">
+          <div className="pt-10 md:pt-0 flex flex-col md:col-span-6">
+            <div className="">
               <h1 className="text-[12vw] sm:text-[10vw] md:text-6xl lg:text-7xl font-bold leading-tight ">
                 {hello} <br />
                 <span className="text-accent ">{limon}</span>
@@ -18,7 +18,7 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="mt-10 flex items-center flex-wrap gap-1 py-1      md:bg-red-300">
+              <div className="mt-10 flex items-center flex-wrap gap-1 py-1">
                 <span className="text-[14px] opacity-60 font-medium">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
@@ -26,12 +26,12 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className=" py-2 min-h-28 md:min-h-0 md:bg-slate-400">
+              <div className=" py-2 min-h-28 md:min-h-0">
                 <p className="text-justify text-base font-medium opacity-60">{description}</p>
               </div>
             </div>
 
-            <div className="mt-[11vh] lg:mt-14 md:bg-yellow-900 ">
+            <div className="mt-[11vh] lg:mt-14">
               <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
                 {socials.map((social, index) => (
                   <a key={index} href={social.link} target="_blank"
@@ -51,7 +51,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-8  md:bg-orange-800">
+              <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-8">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] sm:text-[3vw] md:text-xl hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "
@@ -64,8 +64,8 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="hidden md:block md:col-span-6   bg-blue-400">
-            <div className="lg:h-full lg:flex lg:justify-center lg:bg-blue-950">
+          <div className="hidden md:block md:col-span-6">
+            <div className="md:h-full lg:h-full md:flex md:justify-center">
               <img src={image} alt="hero image" className="" />
             </div>
           </div>
