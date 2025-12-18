@@ -6,9 +6,9 @@ const Home = () => {
   const {hello, limon, sheikh, title, titleName, description, socials, image} = HeroData[0];
 
   return (
-    <section id="hero" className="min-h-[calc(100vh-80px)] w-full overflow-hidden sm:w-full md:w-full lg:w-full md:bg-orange-500">
-      <div className="container mx-auto min-h-[calc(100vh-80px)]    md:bg-pink-400">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12     md:bg-green-500 ">
+    <section id="hero" className="min-h-[calc(100vh)] lg:flex lg:items-center overflow-hidden md:bg-orange-500">
+      <div className="container mx-auto    md:bg-pink-400">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12    md:bg-green-500 ">
           <div className="pt-10 flex flex-col md:col-span-6      md:bg-yellow-300 ">
             <div className="md:bg-yellow-600 ">
               <h1 className="text-[12vw] sm:text-[10vw] md:text-6xl lg:text-7xl font-bold leading-tight ">
@@ -65,8 +65,8 @@ const Home = () => {
           </div>
 
           <div className="hidden md:block md:col-span-6   bg-blue-400">
-            <div className="h-[100%] w-[100%]">
-              <img src={image} alt="hero image" className="w-[100%] h-[100%]" />
+            <div className=" lg:bg-blue-950">
+              <img src={image} alt="hero image" className=" " />
             </div>
           </div>
         </div>
