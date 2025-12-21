@@ -3,9 +3,6 @@ import { FaLaptopCode, FaPalette, FaBolt, FaCheckCircle, FaExternalLinkAlt } fro
 import { SiTailwindcss, SiReact, SiHtml5, SiCss3, SiJavascript, SiWordpress, SiPhp } from "react-icons/si";
 import { TbLayout2Filled } from "react-icons/tb";
 
-import { FaCode, FaPaintBrush, FaWordpress  } from "react-icons/fa";
-import { SiSimilarweb } from "react-icons/si";
-
 
 export const serviceTitle = {
   offer: "WHAT WE OFFER",
