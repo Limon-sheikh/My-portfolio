@@ -47,12 +47,9 @@ const Navbar = () => {
             <Logo />
             <NavLinks className="hidden md:block" />
             <MenuToggle isOpen={open} toggle={toggle} />
-            <div className="flex items-center justify-center gap-12">
-              <span></span>
-              <Button title="hire me" border={false}
-              className="text-2xl text-gray rounded-md md:font-bold md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
+            <Button title="hire me" border={false}
+            className="text-2xl text-gray rounded-md md:font-bold md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font bg-accent hover:bg-hover transition-all duration-150 ease-linear hidden md:block"
             />
-            </div>
           </div>
         </nav>
       </header>
