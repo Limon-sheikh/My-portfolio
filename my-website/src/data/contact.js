@@ -18,7 +18,8 @@ const contactFormData = {
   fields: [
     {id: 1, name:"name", type:"text", label:"Your Name", placeholder:"Enter your name"},
     {id: 2, name:"email", type:"email", label:"Email Address", placeholder:"Enter your email"},
-    {id: 3, name:"message", type:"textarea", label:"Message", placeholder:"Write your message", rows: 5},
+    {id: 3, name:"email", type:"email", label:"Email Address", placeholder:"Enter your subject.."},
+    {id: 4, name:"message", type:"textarea", label:"Message", placeholder:"Write your message...", rows: 5},
   ],
 
 };
