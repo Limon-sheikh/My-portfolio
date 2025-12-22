@@ -2,9 +2,11 @@
 
 const Footer = () => {
     return (
-      <footer className="bg-blue-900 text-white">
+      <footer className="bg-[#284b50] text-white h-96">
         <div className="container mx-auto">
-            sdfdkfdj
+            <div className="">
+
+            </div>
         </div>
       </footer>
     );

@@ -3,6 +3,11 @@ import Home from '../assets/lottie/Home.json';
 import calling from '../assets/lottie/incoming call.json';
 import message from '../assets/lottie/Atendimento.json';
 
+export const sectionTitle = {
+  title: "Let's Connect",
+  description: "I’m available for collaborations, freelance work, and new opportunities.",
+}
+
 export const contactInfo = [
     {id:1, title:"Address :", animation: Home, text:"744 New York Ave, Brooklyn, Kings, New York 10224"},
     {id:2, title:"phone :", animation: calling, text:"+8801764866645 +8801518641623"},
@@ -12,7 +17,7 @@ export const contactInfo = [
 
 const contactFormData = {
   title: "Let's talk",
-  subtitle: "Feel free to reach out for projects or collaboration",
+  subtitle: "Enter your project details",
   description: "Feel free to reach out for projects or collaboration",
   buttonText: "Send Message",
   fields: [

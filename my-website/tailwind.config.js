@@ -15,7 +15,7 @@ export default {
     // },
     extend: {
       colors: {
-        primary: "#1E293B",     // Dark blue
+        primary: "#041616",     // text color Dark blue
         accent: "#b8b260",      // oval green
         hover: "#a19c4f",      // Cyan
         light: "#F8FAFC",       // Light gray
