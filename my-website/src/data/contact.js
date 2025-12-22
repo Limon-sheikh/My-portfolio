@@ -5,7 +5,7 @@ import message from '../assets/lottie/Atendimento.json';
 
 export const sectionTitle = {
   title: "Let's Connect",
-  description: "I’m available for collaborations, freelance work, and new opportunities.",
+  description: "Whether you have a project in mind, a question, or just want to say hello, I’m always open to discussing new ideas and opportunities.",
 }
 
 export const contactInfo = [
@@ -18,7 +18,8 @@ export const contactInfo = [
 const contactFormData = {
   title: "Let's talk",
   subtitle: "Enter your project details",
-  description: "Feel free to reach out for projects or collaboration",
+  description: "I’m available for collaborations, freelance work, and new opportunities.",
+  // description: "Feel free to reach out for projects or collaboration",
   buttonText: "Send Message",
   fields: [
     {id: 1, name:"name", type:"text", width: "half",  placeholder:"Enter your name"},
