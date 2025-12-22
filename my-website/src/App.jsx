@@ -6,7 +6,7 @@ import Skills from "./pages/Skills";
 import Services from "./pages/Services";
 // import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-// import Footer from "./pages/Footer";
+import Footer from "./pages/Footer";
 // import Test from './components/Test'
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

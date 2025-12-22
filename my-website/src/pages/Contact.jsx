@@ -9,9 +9,10 @@ const Contact = () => {
             <div className="container mx-auto">
                 <div id="wraper" className="grid grid-cols-1 gap-28 lg:grid-cols-2 lg:gap-5 px-5 md:px-0">
                     <div id="contact-info">
-                        <h1 className="text-4xl font-bold pb-2">Let's Connect</h1>
-                        <p className="pb-8 text-md font-medium opacity-60">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore?</p>
-                        <hr className='opacity-50'/>
+                        <div className='border-b border-b-black/20'>
+                            <h1 className="text-4xl font-bold pb-2">Let's Connect</h1>
+                            <p className="pb-8 text-md font-medium opacity-60">labore?</p>
+                        </div>
                         {contactInfo.map((item)=>(
                             <div key={item.id} className="pt-8 flex flex-col gap-2">
                                 <h5 className='text-md font-medium'>{item.title}</h5>
@@ -19,15 +20,13 @@ const Contact = () => {
                                     <span className=''>
                                         <Lottie animationData={item.animation} className='w-14 h-14'/>
                                     </span>
-                                    <p className='text-md font-medium opacity-60'>{item.text}</p>
+                                    <p className='text-md font-medium'>{item.text}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div id="contact-form" className='bg-white shadow-[0px_0px_15px_7px_rgba(0,_0,_0,_0.1)] rounded-lg'>
-                        <div>
-                            <ContactForm/>
-                        </div>
+                    <div className='bg-white shadow-[0px_0px_15px_7px_rgba(0,_0,_0,_0.1)] rounded-lg '>
+                        <ContactForm/>
                     </div>
                 </div>
             </div>
