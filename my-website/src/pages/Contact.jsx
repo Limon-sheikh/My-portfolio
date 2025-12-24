@@ -1,6 +1,6 @@
 // import React from 'react';
 import {contactInfo, sectionTitle} from '../data/contact';
-import ContactForm from '../components/contact form/ContactForm ';
+import ContactForm from '../components/contactForm/ContactForm ';
 import Lottie from "lottie-react";
 
 const Contact = () => {

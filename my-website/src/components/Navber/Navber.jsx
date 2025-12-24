@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from './Logo';
 import NavLinks from './NavLinks';
 import Button from './Button';
-import MenuToggle from '../MenuToggle';
+import MenuToggle from './toggleFunction/MenuToggle';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

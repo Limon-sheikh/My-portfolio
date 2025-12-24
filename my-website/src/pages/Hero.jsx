@@ -1,9 +1,10 @@
 import HeroData from "../data/hero";
 import Button from "../components/Navber/Button";
+import SocialIcon from "../components/hero/SocialIcon";
 import "../App.css"; //custome typewriter
 
 const Home = () => {
-  const {hello, limon, sheikh, title, titleName, description, socials, image} = HeroData[0];
+  const {hello, limon, sheikh, title, titleName, description, image} = HeroData[0];
 
   return (
     <section id="hero" className="min-h-[calc(100vh)] md:flex md:items-center overflow-hidden">
@@ -32,25 +33,7 @@ const Home = () => {
             </div>
 
             <div className="mt-[11vh] lg:mt-14">
-              <div className="grid grid-flow-col justify-between md:justify-start md:gap-6 py-2">
-                {socials.map((social, index) => (
-                  <a key={index} href={social.link} target="_blank"
-                    style={{borderColor: social.color, transition: "all 0.4s ease-in-out"}}
-                    className="p-2 border rounded-tl-3xl rounded-tr-3xl rounded-br-3xl"
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = social.color;
-                      e.currentTarget.firstChild.style.color = "#fff";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = "transparent";
-                      e.currentTarget.firstChild.style.color = social.color;
-                    }}
-                  >
-                    <social.icon style={{color: social.color, transition: "all 0.4s ease-in-out"}} size={26}/>
-                  </a>
-                ))}
-              </div>
-
+                <SocialIcon/>
               <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-8">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] sm:text-[3vw] md:text-xl hover:bg-hover

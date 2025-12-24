@@ -1,7 +1,7 @@
 // import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import Cursor from './components/CustomCursor.jsx';
+import Cursor from './components/customCursore/CustomCursor.jsx';
 
 
 

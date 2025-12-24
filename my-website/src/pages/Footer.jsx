@@ -1,15 +1,44 @@
 // import React from 'react';
+// import {footerData} from "../data/footer";
+import FooterAbout from "../components/footer/FooterAbout";
 
 const Footer = () => {
-    return (
-      <footer className="bg-[#284b50] text-white h-96">
-        <div className="container mx-auto">
-            <div className="">
+  return (
+    <footer className="bg-[#284b50] py-24 text-white">
+      <div className="container mx-auto h-full">
+        <div className="bg-red-600 w-full grid grid-cols-1 gap-5 lg:grid-cols-4">
 
+          <FooterAbout/>
+
+
+          {/* {footerData.map((item) => (
+            <div key={item.id}>
+              {item.type === "about"  &&(
+                <div className="bg-green-800">
+                  <p>{item.description}</p>
+                </div>
+              )}
+              {item.type === "link"  &&(
+                <div className="bg-blue-800">
+                  <p>{item.description}</p>
+                </div>
+              )}
+              {item.type === "linkedin"  &&(
+                <div className="bg-orange-300">
+                  <p>{item.description}</p>
+                </div>
+              )}
+              {item.type === "signup"  &&(
+                <div className="bg-pink-800">
+                  <p>{item.description}</p>
+                </div>
+              )}
             </div>
+          ))} */}
         </div>
-      </footer>
-    );
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
