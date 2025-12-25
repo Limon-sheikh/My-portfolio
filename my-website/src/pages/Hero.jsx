@@ -33,7 +33,7 @@ const Home = () => {
             </div>
 
             <div className="mt-[11vh] lg:mt-14">
-                <SocialIcon/>
+              <SocialIcon size={20} wrapperClass='gap-6' className={`border p-2 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl`}/>
               <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-8">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] sm:text-[3vw] md:text-xl hover:bg-hover
