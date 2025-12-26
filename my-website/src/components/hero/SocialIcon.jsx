@@ -6,7 +6,7 @@ const SocialIcon = ({size, className, wrapperClass}) => {
     const {socials} = HeroData[0];
 
     return (
-        <div className={`${wrapperClass} grid grid-flow-col justify-between md:justify-start py-2`}>
+        <div className={`${wrapperClass}`}>
             {socials.map((social, index) => (
                 <a key={index} href={social.link} target="_blank" style={{borderColor: social.color, transition: "all 0.4s ease-in-out"}}
                     className={`${className}`}

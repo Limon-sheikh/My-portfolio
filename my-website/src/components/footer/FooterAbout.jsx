@@ -17,7 +17,7 @@ const FooterAbout = () => {
                   {item.description}
                 </h4>
 
-                <SocialIcon size={20} wrapperClass="gap-3 justify-center" 
+                <SocialIcon size={20} wrapperClass="flex flex-wrap gap-3 justify-start" 
                 className="flex flex-wrap gap-3 border border-dashed rounded-full p-2"
                 />
               </div>

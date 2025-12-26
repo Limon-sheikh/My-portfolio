@@ -7,8 +7,9 @@ const Home = () => {
   const {hello, limon, sheikh, title, titleName, description, image} = HeroData[0];
 
   return (
-    <section id="hero" className="min-h-[calc(100vh)] md:flex md:items-center overflow-hidden">
-      <div className="container mx-auto">
+    <>
+      <section id="hero" className="max-h-[calc(100vh-80px)] md:flex md:items-center">
+      <div className="container mx-auto bg-green-500">
         <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12 lg:gap-2">
           <div className="pt-10 md:pt-0 flex flex-col md:col-span-6">
             <div className="">
@@ -33,7 +34,9 @@ const Home = () => {
             </div>
 
             <div className="mt-[11vh] lg:mt-14">
-              <SocialIcon size={20} wrapperClass='gap-6' className={`border p-2 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl`}/>
+              <SocialIcon size={20} wrapperClass='flex flex-wrap justify-between md:justify-start gap-2 md:gap-6' 
+                className={`border p-2 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl`}
+              />
               <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-8">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] sm:text-[3vw] md:text-xl hover:bg-hover
@@ -49,13 +52,14 @@ const Home = () => {
 
           <div className="hidden md:block md:col-span-6">
             <div className="md:h-full lg:h-full md:flex md:justify-center">
-              <img src={image} alt="hero image" className="" />
+              <img src={image} alt="hero image"/>
             </div>
           </div>
         </div>
       </div>
-      <hr />
     </section>
+      <hr />
+  </>
   );
 };
 
