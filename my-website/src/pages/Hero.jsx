@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <section id="hero" className="min-h-[calc(100vh-80px)] md:flex md:items-center">
       <div className="container mx-auto">
-        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12 lg:gap-2">
+        <div id="wraper" className="px-5 md:px-0 md:grid md:grid-cols-12 lg:gap-2 bg-orange-500">
           <div className="pt-[4vh] md:pt-0 flex flex-col md:col-span-6">
             <div className="">
               <h1 className="text-[13vw] mt-10 sm:text-[10vw] md:text-6xl lg:text-7xl font-bold leading-tight ">
@@ -33,7 +33,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-[14vh] lg:mt-14">
+            <div className="mt-[14vh]">
               <SocialIcon size={20} wrapperClass='flex flex-wrap justify-between md:justify-start gap-2 md:gap-6' 
                 className={`border p-2 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl`}
               />

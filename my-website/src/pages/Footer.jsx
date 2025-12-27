@@ -1,16 +1,16 @@
 // import React from 'react';
 // import {footerData} from "../data/footer";
 import FooterAbout from "../components/footer/FooterAbout";
+import FooterLink from "../components/footer/FooterLink";
 
 const Footer = () => {
   return (
     <footer className="bg-[#284b50] py-24 text-white">
       <div className="container mx-auto h-full">
-        <div className="border p-5 md:px-0 w-full grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-4 lg:grid-cols-4">
+        <div className="border p-5 md:px-0 w-full grid grid-cols-1 gap-8 lg:grid-cols-4">
 
           <FooterAbout/>
-          <FooterAbout/>
-          <FooterAbout/>
+          <FooterLink/>
 
 
           {/* {footerData.map((item) => (

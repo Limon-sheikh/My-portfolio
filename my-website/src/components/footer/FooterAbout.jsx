@@ -10,13 +10,9 @@ const FooterAbout = () => {
         {footerData.map((item) => (
           <div key={item.id} className="w-full">
             {item.type === "about" && (
-              <div className="flex flex-col gap-7 border overflow-hidden">
+              <div className="flex flex-col gap-6 overflow-hidden">
                 <Logo />
-
-                <h4 className="break-words text-sm leading-relaxed">
-                  {item.description}
-                </h4>
-
+                <h4 className="break-words text-sm leading-relaxed">{item.description}</h4>
                 <SocialIcon size={20} wrapperClass="flex flex-wrap gap-3 justify-start" 
                 className="flex flex-wrap gap-3 border border-dashed rounded-full p-2"
                 />
