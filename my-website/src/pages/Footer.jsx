@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark_blue py-24 text-white">
       <div className="container mx-auto h-full">
-        <div className="border p-5 md:px-0 w-full grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_.8fr_.9fr_2fr]">
+        <div className="border p-5 md:px-0 w-full grid grid-cols-1 gap-14 lg:gap-10 lg:grid-cols-[1.8fr_1fr_1fr_2fr]">
           <FooterAbout/>
           <FooterLink/>
           <FooterLinkedin/>
