@@ -20,7 +20,7 @@ const Home = () => {
                 <span className="text-accent ">{sheikh}</span>
               </h1>
               {/* typewriter */}
-              <div className="mt-[10vh] flex items-center flex-wrap gap-1 py-1">
+              <div className="mt-[9vh] flex items-center flex-wrap gap-1 py-1">
                 <span className="text-[14px] opacity-60 font-medium">{title}</span>
                 <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
                   <div className="inline-block">
@@ -33,11 +33,11 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-[14vh]">
-              <SocialIcon size={20} wrapperClass='flex flex-wrap justify-between md:justify-start gap-2 md:gap-6' 
+            <div className="mt-[14vh] flex flex-col gap-[4vh]">
+              <SocialIcon size={22} wrapperClass='flex flex-wrap justify-between md:justify-start gap-2 md:gap-6' 
                 className={`border p-2 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl`}
               />
-              <div className="flex justify-between gap-4 md:justify-start md:gap-9 py-5">
+              <div className="flex justify-between gap-4 md:justify-start md:gap-9">
                 <Button title="view more" border={false}
                   className="bg-accent text-gray px-7 py-2 font-semibold text-[4vw] sm:text-[3vw] md:text-xl hover:bg-hover
                     transition-all duration-150 ease-linear rounded-md "

@@ -34,8 +34,9 @@ export const footerData = [
     id: 4,
     type: "signup",
     title: "signup",
-    name: "signup",
-    description:"hjhj",
+    placeholder: "subscribe",
+    buttonText: "go",
+    description:"Follow our newsletter to stay updated about agency.",
     link:[
       {id: 1, name: "Security & Provciy", url: "/", icon: GoSearch},
     ],
