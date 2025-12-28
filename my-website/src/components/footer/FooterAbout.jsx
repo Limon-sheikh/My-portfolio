@@ -12,8 +12,8 @@ const FooterAbout = () => {
             {item.type === "about" && (
               <div className="flex flex-col gap-6 overflow-hidden">
                 <Logo />
-                <h4 className="break-words text-sm leading-relaxed">{item.description}</h4>
-                <SocialIcon size={20} wrapperClass="flex flex-wrap gap-3 justify-start" 
+                <h5 className="break-words text-sm leading-relaxed">{item.description}</h5>
+                <SocialIcon size={16} wrapperClass="flex flex-wrap gap-3 justify-start" 
                 className="flex flex-wrap gap-3 border border-dashed rounded-full p-2"
                 />
               </div>

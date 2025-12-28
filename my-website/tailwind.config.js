@@ -17,12 +17,10 @@ export default {
       colors: {
         primary: "#06272e",     // hedding text color Dark blue
         secondary: "#041616",     // text color Dark blue
+        dark_blue: "#284b50",      // footer bg-color
+        light_blue: "#335b61",      // footer item linkedin bg-color
         accent: "#b8b260",      // oval green
         hover: "#a19c4f",      // Cyan
-        light: "#F8FAFC",       // Light gray
-        dark: "#0F172A",        // Deep blackish-blue
-        peach: "#FFEDD5",       // Light peach
-        gray: "#222831",       // Light peach
       },
 
       fontFamily: {

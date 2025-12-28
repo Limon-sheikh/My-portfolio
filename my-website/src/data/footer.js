@@ -1,4 +1,5 @@
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight, FaLinkedin } from "react-icons/fa6";
+import { GoSearch } from "react-icons/go";
 
 export const footerData = [
   {
@@ -22,13 +23,21 @@ export const footerData = [
   {
     id: 3,
     type: "linkedin",
-    icon: "icon",
-    description:"reer",
+    title: "Linkdin",
+    name: "@Harold.com",
+    description:"The full monty spiffing good time .",
+    link:[
+      {id: 1, name: "Linkdin", url: "/", icon: FaLinkedin},
+    ],
   },
   {
     id: 4,
     type: "signup",
-    icon: "icon",
+    title: "signup",
+    name: "signup",
     description:"hjhj",
+    link:[
+      {id: 1, name: "Security & Provciy", url: "/", icon: GoSearch},
+    ],
   },
 ];

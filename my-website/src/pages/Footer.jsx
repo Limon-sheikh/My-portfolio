@@ -2,41 +2,18 @@
 // import {footerData} from "../data/footer";
 import FooterAbout from "../components/footer/FooterAbout";
 import FooterLink from "../components/footer/FooterLink";
+import FooterLinkedin from "../components/footer/FooterLinkedin";
+import NewsLetter from "../components/footer/NewsLetter";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#284b50] py-24 text-white">
+    <footer className="bg-dark_blue py-24 text-white">
       <div className="container mx-auto h-full">
-        <div className="border p-5 md:px-0 w-full grid grid-cols-1 gap-8 lg:grid-cols-4">
-
+        <div className="border p-5 md:px-0 w-full grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_.8fr_.9fr_2fr]">
           <FooterAbout/>
           <FooterLink/>
-
-
-          {/* {footerData.map((item) => (
-            <div key={item.id}>
-              {item.type === "about"  &&(
-                <div className="bg-green-800">
-                  <p>{item.description}</p>
-                </div>
-              )}
-              {item.type === "link"  &&(
-                <div className="bg-blue-800">
-                  <p>{item.description}</p>
-                </div>
-              )}
-              {item.type === "linkedin"  &&(
-                <div className="bg-orange-300">
-                  <p>{item.description}</p>
-                </div>
-              )}
-              {item.type === "signup"  &&(
-                <div className="bg-pink-800">
-                  <p>{item.description}</p>
-                </div>
-              )}
-            </div>
-          ))} */}
+          <FooterLinkedin/>
+          <NewsLetter/>
         </div>
       </div>
     </footer>
