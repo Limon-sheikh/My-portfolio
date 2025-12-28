@@ -14,7 +14,7 @@ const NewsLetter = () => {
                                 <input type="text" placeholder={item.placeholder} 
                                 className='px-5 h-full w-full text-black outline-none rounded-tl-lg rounded-bl-lg'
                                 />
-                                <button type="submit" className='bg-green-400 h-full px-4 capitalize font-semibold rounded-tr-lg rounded-br-lg'>
+                                <button type="submit" className='bg-green-400 h-full px-8 capitalize font-semibold rounded-tr-lg rounded-br-lg '>
                                     {item.buttonText}
                                 </button>
                             </form>
