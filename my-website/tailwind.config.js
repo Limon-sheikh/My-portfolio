@@ -14,8 +14,18 @@ export default {
     //   '2xl': '1536px',
     // },
     extend: {
+
+      // custom type writer start
+      animation:{blink: "blink 0.4s step-end infinite",},
+      keyframes: {
+        blink:{"0%, 100%": {opacity: "1"},
+        "50%":{opacity: "0"},
+      }},
+      // end 
+
+      // color plane start
       colors: {
-        primary: "#06272e",     // hedding text color Dark blue
+        primary: "#021114",     // hedding text color
         secondary: "#041616",     // text color Dark blue
         dark_blue: "#284b50",      // footer bg-color
         light_blue: "#335b61",      // footer item linkedin bg-color
@@ -25,12 +35,15 @@ export default {
         accent: "#b8b260",      // oval green
         hover: "#a19c4f",      // Cyan
       },
+      // end 
 
+      // font family start 
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         cambodia: ['"Battambang"', 'sans-serif'],
       },
+      // end 
 
     },
   },

@@ -4,27 +4,27 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Services from "./pages/Services";
-// import Projects from "./pages/Projects";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
-// import Test from './components/Test'
+import Test from './components/Test'
 
 function App() {
   return (
     <>
       <Navbar />
-        {/* <Test/> */}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/services" element={<Services />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer/>
+      {/* <Test/> */}
     </>
   );
 }

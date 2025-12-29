@@ -1,10 +1,11 @@
 import HeroData from "../data/hero";
 import Button from "../components/Navber/Button";
 import SocialIcon from "../components/hero/SocialIcon";
-import "../App.css"; //custome typewriter
+// import "../App.css"; //custome typewriter
+import TypeWriter from "../components/hero/TypeWriter";
 
 const Home = () => {
-  const {hello, limon, sheikh, title, titleName, description, image} = HeroData[0];
+  const {hello, limon, sheikh, description, image, title} = HeroData[0];
 
   return (
     <>
@@ -21,15 +22,13 @@ const Home = () => {
               </h1>
               {/* typewriter */}
               <div className="mt-[9vh] flex items-center flex-wrap gap-1 py-1">
-                <span className="text-[14px] opacity-60 font-medium">{title}</span>
-                <div className="w-56 sm:w-72 md:w-[16.5rem] flex items-center overflow-hidden overw whitespace-nowrap">
-                  <div className="inline-block">
-                    <span className="text-xl sm:text-2xl flex items-center font-bold typewriter">{titleName}</span>
-                  </div>
-                </div>
+                <span className="text-sm text-secondary/60 font-medium">{title}</span>
+                <TypeWriter texts= {['front end developer', 'UI/UX designer', 'wordpress developer']}
+                  typingSpeed={80} deletingSpeed={50} endDelay={500} startDelay={1000}
+                />
               </div>
               <div className="py-2 min-h-28 md:min-h-0">
-                <p className="text-justify text-base font-medium opacity-60">{description}</p>
+                <p className="text-justify text-base font-medium text-secondary/60">{description}</p>
               </div>
             </div>
 
