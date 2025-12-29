@@ -17,7 +17,7 @@ const FooterLink = () => {
                             <li key={linkItem.id} 
                             className="flex gap-4 items-center text-text_C_W/50 hover:text-hover_c_g transition-all duration-500">
                                 {Icon && <Icon size={16} />}
-                                <a href={linkItem.url} className="">{linkItem.name}</a>
+                                <a href={linkItem.url} className="text-md font-medium">{linkItem.name}</a>
                             </li>
                             );
                         })}

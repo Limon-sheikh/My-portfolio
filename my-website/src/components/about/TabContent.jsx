@@ -12,9 +12,7 @@ const TabContent = ({ activeTab }) => {
     <div className="h-[200px] overflow-y-auto overflow-x-hidden wrap-break-word">
       {/* skills tab */}
       {activeTab === "skills" && (
-      <div>
-        {progressData.map((item) => (<Skills key={item.title} title={item.title} percent={item.percent}/>
-      ))}</div>)}
+      <div>{progressData.map((item) => (<Skills key={item.title} title={item.title} percent={item.percent}/>))}</div>)}
 
       {/* experience tab */}
       {activeTab === "experience" &&(<div><ExperienceTimeline /></div>)}

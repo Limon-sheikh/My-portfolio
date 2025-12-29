@@ -14,10 +14,10 @@ const Card = ({ title, description, tools, Icon, id, accent, tagline, shadow }) 
           {Icon && <Icon size={35} />}
         </div>
         <div className="mt-5">
-          <h3 className="text-xl font-bold mb-1">{title}</h3>
-          <h6 className="mb-4 font-semibold opacity-60">{tagline}</h6>
+          <h3 className="text-xl text-primary font-bold mb-1">{title}</h3>
+          <h6 className="mb-4 font-semibold text-md text-primary/60">{tagline}</h6>
           <div className="max-h-32 mt-3 overflow-y-auto overflow-x-hidden break-words">
-            <p className="text-start font-medium opacity-60">{description}</p>
+            <p className="text-start font-medium text-md text-primary/60">{description}</p>
           </div>
         </div>
 
@@ -26,7 +26,7 @@ const Card = ({ title, description, tools, Icon, id, accent, tagline, shadow }) 
             const Ico = tool.icon;
             return (
               <div className={`rounded-md ${accent}`}>
-                <span key={index} className="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg text-sm">
+                <span key={index} className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium">
                   <Ico className="text-lg"/> {tool.name}
                 </span>
               </div>

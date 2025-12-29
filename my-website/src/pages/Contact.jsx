@@ -11,21 +11,21 @@ const Contact = () => {
                     <div className=''>
                         <div className='border-b border-b-black/20'>
                             <h1 className="text-4xl text-primary font-bold pb-2">{sectionTitle.title}</h1>
-                            <p className="pb-8 text-md text-secondary/50 font-medium ">{sectionTitle.description}</p>
+                            <p className="pb-8 text-md text-primary/60 font-medium ">{sectionTitle.description}</p>
                         </div>
                         {contactInfo.map((item)=>(
                             <div key={item.id} className="pt-8 flex flex-col gap-2">
-                                <h5 className='text-md text-primary font-medium'>{item.title}</h5>
+                                <h5 className='text-md text-primary font-semibold'>{item.title}</h5>
                                 <div className='flex gap-3 items-center w-[330px]'>
                                     <span className=''>
                                         <Lottie animationData={item.animation} className='w-14 h-14'/>
                                     </span>
-                                    <p className='text-md text-secondary font-medium'>{item.text}</p>
+                                    <p className='text-md text-primary font-medium'>{item.text}</p>
                                 </div>
                             </div>
                         ))}
                     </div>
-                    <div className='bg-white shadow-[0px_0px_15px_7px_rgba(0,_0,_0,_0.1)] rounded-3xl relative top-16'>
+                    <div className='bg-white shadow-2xl rounded-3xl relative top-16'>
                         <ContactForm/>
                     </div>
                 </div>

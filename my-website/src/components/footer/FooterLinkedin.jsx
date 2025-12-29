@@ -15,8 +15,8 @@ const FooterLinkedin = () => {
                                 after:rotate-[20deg] after:z-[0] after:-z-1
                             ">
                                 <div className='bg-light_blue group rounded-xl px-4 py-4 relative top-0 left-0 z-10'>
-                                    <p className='pb-3 text-text_C_W/50'>{item.description}</p>
-                                    <a href="" className='text-text_C_W group-hover:text-hover_c_g transition-all duration-700'>
+                                    <p className='pb-3 text-text_C_W/50 text-md font-medium'>{item.description}</p>
+                                    <a href="" className='text-text_C_W text-md font-medium group-hover:text-hover_c_g transition-all duration-700'>
                                         {item.name}
                                     </a>
                                 </div>
@@ -28,7 +28,7 @@ const FooterLinkedin = () => {
                                     return(
                                         <a href={linkItem.url} className='flex gap-3 items-center'>
                                             <span className='text-text_C_W'>{Icon && <Icon size={42}/>}</span>
-                                            <span className='font-semibold text-text_C_W/50'>Linkdin</span>
+                                            <span className='font-semibold text-md text-text_C_W/50'>{linkItem.name}</span>
                                         </a>
                                     )
                                 })}

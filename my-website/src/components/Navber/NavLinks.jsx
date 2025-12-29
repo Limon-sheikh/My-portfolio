@@ -9,7 +9,8 @@ const NavLinks = ({ className, onLinkClick }) => {
         {mainMenu.map((link) => (
             <li key={link.id}>
             <Link to={link.path} onClick={onLinkClick}
-              className="py-2 px-4 inline-block text-center font-semibold text-md hover:text-accent transition-all duration-200 md:bg-transparent md:p-2 lg:text-lg">
+              className="py-2 px-4 inline-block text-center font-semibold text-md text-secondary hover:text-accent 
+              transition-all duration-200 md:bg-transparent md:p-2 lg:text-lg">
               {link.name}
             </Link>
             </li>

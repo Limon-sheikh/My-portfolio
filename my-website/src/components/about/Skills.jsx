@@ -20,11 +20,11 @@ function Progress({ title, percent }) {
 
   return (
     <div className="mb-4">
-      <div className="flex justify-between mb-1">
-        <span className="font-semibold">{title}</span>
-        <span className="font-semibold">{width}%</span>
+      <div className="flex justify-between mb-1 text-primary text-md font-semibold">
+        <span>{title}</span>
+        <span>{width}%</span>
       </div>
-      <div className="w-full bg-gray-300 rounded-full overflow-hidden">
+      <div className="w-full bg-secondary/5 rounded-full overflow-hidden">
         <div className="bg-accent h-2 rounded-full transition-all duration-500" style={{ width: `${width}%`}}></div>
       </div>
     </div>

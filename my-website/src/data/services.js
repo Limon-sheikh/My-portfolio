@@ -22,32 +22,36 @@ export const cardData = [
     tools: [
       { name: "HTML5", icon: SiHtml5 },
       { name: "CSS3", icon: SiCss3 },
+      { name: "JavaScript", icon: SiJavascript },
       { name: "Tailwind", icon: SiTailwindcss },
-      { name: "JavaScript (ES6+)", icon: SiJavascript },
       { name: "React.js", icon: SiReact },
     ],
     accent: "text-yellow-700 bg-yellow-200",
-    shadow:"shadow-[0px_0px_14px_6px_rgba(234,_179,_8,_0.5)]",
+    shadow: "shadow-md hover:shadow-xl",
     icon: FaLaptopCode,
   },
   
-  {
-    id: "wordpress",
-    title: "WordPress Development",
-    tagline: "Custom themes & plugins",
+ {
+    id: "ui/ux",
+    title: "UI / UX Implementation",
+    tagline: "User-centered, accessible and modern interfaces",
     description:
-      "I create custom WordPress websites with responsive design, SEO-friendly structure, and fast performance. I also develop custom plugins as per client requirements.",
+      "I implement UI designs with careful attention to usability, accessibility and micro-interactions to improve engagement and user satisfaction.",
     tools: [
-      { name: "WordPress", icon: SiWordpress },
-      { name: "HTML5", icon: SiHtml5 },
-      { name: "CSS3", icon: SiCss3 },
-      { name: "JavaScript", icon: SiJavascript },
-      { name: "PHP", icon: SiPhp },
+      { name: "Figma → HTML", icon: FaPalette }, // using FaPalette for visual
+      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "React", icon: SiReact },
     ],
-    link: "/wordpress-projects",
-    accent: "text-pink-700 bg-pink-200",
-    shadow:"shadow-[0px_0px_20px_4px_rgba(236,_72,_153,_0.5)]",
-    icon: SiWordpress,
+    features: [
+      "Accessible components (a11y)",
+      "Micro-interactions & animations",
+      "Design-to-code fidelity",
+    ],
+    deliverables: ["Component library", "Interactive prototypes", "Handoff docs"],
+    cta: { label: "See Case Studies", href: "#case-studies" },
+    accent: "bg-indigo-200 text-indigo-700",
+    shadow: "shadow-md hover:shadow-xl",
+    icon: FaPalette,
   },
   
   {
@@ -63,31 +67,29 @@ export const cardData = [
     ],
     link: "/theme-customization",
     accent: "text-violet-700 bg-violet-200",
-    shadow:"shadow-[0px_0px_20px_4px_rgba(147,_51,_234,_0.5)]",
+    shadow: "shadow-md hover:shadow-xl",
     icon: TbLayout2Filled,
   },
   
- 
-  // {
-  //   id: "ui/ux",
-  //   title: "UI / UX Implementation",
-  //   tagline: "User-centered, accessible and modern interfaces",
+
+
+  //  {
+  //   id: "wordpress",
+  //   title: "WordPress Development",
+  //   tagline: "Custom themes & plugins",
   //   description:
-  //     "I implement UI designs with careful attention to usability, accessibility and micro-interactions to improve engagement and user satisfaction.",
+  //     "I create custom WordPress websites with responsive design, SEO-friendly structure, and fast performance. I also develop custom plugins as per client requirements.",
   //   tools: [
-  //     { name: "Figma → HTML", icon: FaPalette }, // using FaPalette for visual
-  //     { name: "Tailwind", icon: SiTailwindcss },
-  //     { name: "React", icon: SiReact },
+  //     { name: "WordPress", icon: SiWordpress },
+  //     { name: "HTML5", icon: SiHtml5 },
+  //     { name: "CSS3", icon: SiCss3 },
+  //     { name: "JavaScript", icon: SiJavascript },
+  //     { name: "PHP", icon: SiPhp },
   //   ],
-  //   features: [
-  //     "Accessible components (a11y)",
-  //     "Micro-interactions & animations",
-  //     "Design-to-code fidelity",
-  //   ],
-  //   deliverables: ["Component library", "Interactive prototypes", "Handoff docs"],
-  //   cta: { label: "See Case Studies", href: "#case-studies" },
-  //   accent: "bg-indigo-200 text-indigo-700",
-  //   icon: FaPalette,
+  //   link: "/wordpress-projects",
+  //   accent: "text-pink-700 bg-pink-200",
+  //   shadow:"shadow-[0px_0px_20px_4px_rgba(236,_72,_153,_0.5)]",
+  //   icon: SiWordpress,
   // },
 ];
 
@@ -111,46 +113,3 @@ export const cardData = [
     //   href: "#projects",
     // }, 
 
-
-
-
-
-
-
-
-
-
-// export const cardData = [
-//   {
-//     id: 1,
-//     title: "Web Development",
-//     description: "I build responsive and interactive websites using modern technologies ensuring high performance and clean UI.",
-//     // image: "/images/web.png",
-//     icon: FaCode,
-//     iconColor: "#E2852E",
-//   },
-//   {
-//     id: 2,
-//     title: "Wordpress Customization",
-//     description: "Custom and business-focused WordPress websites with full control & easy management for clients.",
-//     // image: "/images/branding.png",
-//     icon: FaWordpress,
-//     // iconColor: "#FF7A00",
-//   },
-//   {
-//     id: 3,
-//     title: "UI/UX Design",
-//     description: "Clean and user-centric digital product design ensuring smooth user experience with modern layout.",
-//     // image: "/images/design.png",
-//     icon: FaPaintBrush,
-//     iconColor: "#A259FF",
-//   },
-//   {
-//     id: 4,
-//     title: "Branding",
-//     description: "Brand identity and creative assets",
-//     // image: "/images/branding.png",
-//     icon: SiSimilarweb,
-//     iconColor: "#00D1F7",
-//   }
-// ];

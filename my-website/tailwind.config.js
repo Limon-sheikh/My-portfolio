@@ -26,15 +26,32 @@ export default {
       // color plane start
       colors: {
         primary: "#021114",     // hedding text color
-        secondary: "#041616",     // text color Dark blue
+        secondary: "#041616",     // text color
+        hover_d_blue: "#407a83",      // contact form hover
         dark_blue: "#284b50",      // footer bg-color
-        light_blue: "#335b61",      // footer item linkedin bg-color
+        light_blue: "#32565ef5",      // footer item linkedin bg-color
+        hover_c_l_b: "#32565ef5",      // footer item linkedin bg-color
         text_C_W: "#FFFFFF",      // text color white
         bg_c_g: "#02a15a",      // go button bg green
-        hover_c_g: "#00da78",      // hover color green
+        hover_c_g: "#08C471",      // hover color green
         accent: "#b8b260",      // oval green
         hover: "#a19c4f",      // Cyan
       },
+      // colors: {
+      //   primary: '#284b50',
+      //   primaryDark: '#1e3a3f',
+      //   primaryLight: '#3f6b72',
+
+      //   accent: '#f4b860',
+      //   accentStrong: '#e36414',
+
+      //   textDark: '#1f2933',
+      //   textMuted: '#6b7280',
+
+      //   bgLight: '#f5f7f8',
+      //   card: '#ffffff',
+      //   borderLight: '#d1d5db',
+      // },
       // end 
 
       // font family start 
