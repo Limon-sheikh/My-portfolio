@@ -33,7 +33,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mt-[14vh] lg:mt-[10vh] flex flex-col gap-[4vh] lg:pb-11">
+            <div className="mt-[14vh] lg:mt-[10vh] flex flex-col gap-[4vh] lg:pb-14">
               <SocialIcon size={22} wrapperClass='flex flex-wrap justify-between md:justify-start gap-2 md:gap-6' 
                 className={`border p-2 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl`}
               />
@@ -50,7 +50,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="hidden md:block md:col-span-6 bg-red-400">
+          <div className="hidden md:block md:col-span-6">
             <div className="md:h-full lg:h-full md:flex md:justify-center">
               <img src={image} alt="hero image"/>
             </div>

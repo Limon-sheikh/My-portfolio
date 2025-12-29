@@ -19,6 +19,9 @@ export default {
         secondary: "#041616",     // text color Dark blue
         dark_blue: "#284b50",      // footer bg-color
         light_blue: "#335b61",      // footer item linkedin bg-color
+        text_C_W: "#FFFFFF",      // text color white
+        bg_c_g: "#02a15a",      // go button bg green
+        hover_c_g: "#00da78",      // hover color green
         accent: "#b8b260",      // oval green
         hover: "#a19c4f",      // Cyan
       },

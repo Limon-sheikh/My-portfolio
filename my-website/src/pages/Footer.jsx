@@ -7,7 +7,7 @@ import NewsLetter from "../components/footer/NewsLetter";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark_blue pt-28 pb-24 text-white">
+    <footer className="bg-dark_blue pt-28 pb-24">
       <div className="container mx-auto h-full">
         <div className="p-5 md:px-0 w-full grid grid-cols-1 gap-16 lg:gap-10 lg:grid-cols-[1.8fr_1fr_1fr_2fr]">
           <FooterAbout/>
