@@ -41,32 +41,36 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full h-20 flex items-center ">
-        <nav className={`w-full bg-white fixed z-50 h-20 transition-all duration-150 ease-in-out ${isSticky ? "shadow-[0px_12px_11px_-5px_rgba(0,_0,_0,_0.1)]" : "relative "}`}>
+      <header className="w-full h-20 flex items-center bg-sec_one_bg_c">
+        <nav className={`w-full fixed z-50 h-20 transition-all duration-150 ease-in-out 
+          ${isSticky ? "shadow-[0px_12px_11px_-5px_rgba(0,_0,_0,_0.1)] bg-white" : "bg-transparent"}`}>
           <div className="container mx-auto h-20 flex items-center justify-between px-5 md:px-0 ">
             <Logo />
-            <NavLinks className="hidden md:block" />
+            <NavLinks parentClass="hidden md:block " childClass="bg-green-500"
+            />
             <MenuToggle isOpen={open} toggle={toggle} />
             <Button title="hire me" border={false}
-            className="text-2xl text-text_C_W rounded-md md:font-bold md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font 
-            bg-dark_blue hover:bg-hover_c_g transition-all duration-150 ease-linear hidden md:block"
+              className="text-2xl text-text_C_W rounded-md md:font-bold md:px-4 md:py-2 xl:px-5 xl:py-3 capitalize font 
+              bg-dark_blue hover:bg-hover_c_g transition-all duration-150 ease-linear hidden md:block"
             />
           </div>
         </nav>
       </header>
 
       {/* Mobile Menu Drawer */}
-      <div className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30 md:hidden transform transition-transform duration-300 ease-in-out 
-        ${open ? "translate-x-0" : "-translate-x-full"} flex flex-col justify-around`}>
-        <nav>
-          <NavLinks onLinkClick={toggle} className="md:hidden flex flex-col gap-3 items-center"/>
-        </nav>
-        <div className="py-2 flex justify-around items-center">
-          <Button onLinkClick={toggle} title="hire me" border={false}
-            className="text-xl font-semibold text-gray capitalize rounded-md px-4 py-1 bg-accent hover:bg-hover transition-all duration-150 ease-linear"
+      <header className={`fixed top-0 left-0 h-full w-[60vw] shadow-xl z-[70] border-l border-white/20 backdrop-blur-md bg-white/30
+        md:hidden transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"}`}>
+        <nav className="flex flex-col justify-around h-full">
+          <NavLinks onLinkClick={toggle} parentClass="md:hidden flex flex-col gap-3 items-center text-md" 
+            childClass=""
           />
-        </div>
-      </div>
+          <div className="py-2 flex justify-around items-center">
+            <Button onLinkClick={toggle} title="hire me" border={false}
+              className="text-xl font-semibold text-gray capitalize rounded-md px-4 py-1 bg-accent hover:bg-hover transition-all duration-150 ease-linear"
+              />
+          </div>
+        </nav>
+      </header>
 
       {/* Backdrop Layer */}
       {open && (

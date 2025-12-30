@@ -36,6 +36,8 @@ export default {
         hover_c_g: "#08C471",      // hover color green
         accent: "#b8b260",      // oval green
         hover: "#a19c4f",      // Cyan
+        sec_one_bg_c: "",       // section bg color one
+        sec_tow_bg_c: "",       // section bg color tow
       },
       // colors: {
       //   primary: '#284b50',
